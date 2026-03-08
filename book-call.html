@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Free Call | Raw & Real | Amy Lang</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Book your free 20-minute discovery call with Amy Lang. Let's see if Raw & Real is the right fit for you.">
+    <meta name="keywords" content="raw food coaching, transformation coaching, free consultation, discovery call">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5e6e8 0%, #ffe4e9 50%, #f5e6e8 100%);
+            min-height: 100vh;
+            line-height: 1.8;
+            color: #000000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(184, 134, 11, 0.2);
+            border: 2px solid rgba(184, 134, 11, 0.3);
+        }
+
+        h1 {
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #0d2137;
+            margin-bottom: 20px;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
+            color: #000000;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 2px solid #B8860B;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+        }
+
+        .back-link:hover {
+            background: linear-gradient(135deg, #CFB53B 0%, #D4AF37 50%, #E6D399 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+        }
+
+        .content-section {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(184, 134, 11, 0.15);
+            border: 2px solid rgba(184, 134, 11, 0.3);
+        }
+
+        .content-section h2 {
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        .content-section p {
+            color: #000000;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .info-box {
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+            border-left: 4px solid #B8860B;
+        }
+
+        .info-box h3 {
+            color: #B8860B;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+
+        .info-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-box li {
+            color: #000000;
+            font-size: 1.05em;
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .info-box li:before {
+            content: "✓";
+            color: #B8860B;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(184, 134, 11, 0.2));
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 4px solid #D4AF37;
+            margin: 30px 0;
+        }
+
+        .highlight-box strong {
+            color: #B8860B;
+            font-size: 1.1em;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, rgba(220, 53, 69, 0.1), rgba(220, 53, 69, 0.15));
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 4px solid #dc3545;
+            margin: 30px 0;
+        }
+
+        .warning-box strong {
+            color: #dc3545;
+            font-size: 1.1em;
+        }
+
+        .cal-embed {
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: 20px;
+            padding: 20px;
+            margin-top: 40px;
+            min-height: 700px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #000000;
+            font-size: 0.9em;
+            background: rgba(255, 255, 255, 0.3);
+            border-top: 2px solid rgba(184, 134, 11, 0.3);
+            border-radius: 10px;
+        }
+
+        footer a {
+            color: #000000;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: #B8860B;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .content-section {
+                padding: 25px;
+            }
+
+            .cal-embed {
+                min-height: 800px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Book Your Free Call</h1>
+            <p class="subtitle">Let's find out if Raw & Real is the right fit for you</p>
+            <a href="index.html" class="back-link">← Back to Homepage</a>
+        </header>
+
+        <div class="content-section">
+            <h2>How Does the Free Call Work?</h2>
+            
+            <p>In the free discovery call, we take 20 minutes to get to know each other. The call happens online via video – from the comfort of your home.</p>
+
+            <div class="info-box">
+                <h3>What happens in the call?</h3>
+                <ul>
+                    <li>You tell me what's going on in your life right now</li>
+                    <li>We check if Raw & Real is suitable for your situation</li>
+                    <li>I explain how I work and what you can expect</li>
+                    <li>You can ask all your questions</li>
+                    <li>We see if we're a good fit to work together</li>
+                </ul>
+            </div>
+
+            <div class="warning-box">
+                <p><strong>Important Note:</strong></p>
+                <p>The discovery call also serves to check whether Raw & Real is even suitable for your situation. This is lifestyle coaching based on personal experience, NOT medical treatment, nutritional therapy, or psychotherapy.</p>
+                <p style="margin-top: 10px;"><strong>Amy Lang is a Neue Selbständige (Austria) with no medical or nutritional science degree.</strong> If you have acute psychological issues, eating disorders, or need medical/therapeutic support, I will tell you honestly and recommend appropriate professionals.</p>
+                <p style="margin-top: 10px;">You must consult your doctor before making significant dietary changes, especially if you have health conditions, take medications, are pregnant, or breastfeeding.</p>
+            </div>
+
+            <div class="highlight-box">
+                <p><strong>No obligation, completely free:</strong> The discovery call is completely non-binding. There's no sales pressure – it's only about finding out if we're a good match and if my work is suitable for you.</p>
+            </div>
+
+            <p style="text-align: center; font-size: 1.15em; color: #0d2137; margin: 30px 0;">
+                <strong>Duration:</strong> 20 minutes | <strong>Format:</strong> Online (Video) | <strong>Cost:</strong> Free
+            </p>
+
+            <div class="info-box">
+                <h3>After the discovery call...</h3>
+                <ul>
+                    <li>...YOU decide if you want to continue</li>
+                    <li>...you get an honest assessment from me whether Raw & Real is suitable for your situation</li>
+                    <li>...we discuss possible next steps (if desired)</li>
+                    <li>...you have all the info to make an informed decision</li>
+                </ul>
+            </div>
+
+            <h2 style="margin-top: 50px; text-align: center;">Book Your Discovery Call Now</h2>
+            <p style="text-align: center; color: #0d2137; margin-bottom: 30px;">Choose a time that works for you:</p>
+
+            <!-- Cal.com Embed -->
+            <div class="cal-embed">
+                <iframe 
+                    src="https://cal.com/wandlung/20min" 
+                    style="width: 100%; height: 100%; min-height: 650px; border: none; border-radius: 10px;"
+                    frameborder="0"
+                    scrolling="yes">
+                </iframe>
+            </div>
+
+            <div class="highlight-box" style="margin-top: 40px;">
+                <p><strong>Preparation tip:</strong> Think briefly about what's currently on your mind and what you hope to achieve with Raw & Real. This way we can make the most of the 20 minutes.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>
+                <a href="index.html">Homepage</a> | 
+                <a href="faq.html">FAQ</a> | 
+                <a href="terms.html">Terms</a> | 
+                <a href="privacy.html">Privacy</a>
+            </p>
+            <p style="margin-top: 10px;">© 2025 Amy Lang - Raw & Real | Holistic Transformation Coaching</p>
+        </footer>
+    </div>
+</body>
+</html>

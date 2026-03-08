@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Frequently Asked Questions | Raw & Real | Amy Lang</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5e6e8 0%, #ffe4e9 50%, #f5e6e8 100%);
+            min-height: 100vh;
+            line-height: 1.6;
+            color: #000000;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(184, 134, 11, 0.2);
+            border: 2px solid rgba(184, 134, 11, 0.3);
+        }
+
+        h1 {
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #0d2137;
+            margin-bottom: 20px;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
+            color: #000000;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 2px solid #B8860B;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+        }
+
+        .back-link:hover {
+            background: linear-gradient(135deg, #CFB53B 0%, #D4AF37 50%, #E6D399 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+        }
+
+        .faq-section {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(184, 134, 11, 0.15);
+            border: 2px solid rgba(184, 134, 11, 0.3);
+        }
+
+        .faq-section h2 {
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 4px solid #B8860B;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 5px 20px rgba(184, 134, 11, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .faq-item h3 {
+            color: #B8860B;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .faq-item p {
+            color: #000000;
+            font-size: 1.05em;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+
+        .faq-item ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .faq-item li {
+            margin-bottom: 8px;
+            color: #000000;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #000000;
+            font-size: 0.9em;
+            background: rgba(255, 255, 255, 0.3);
+            border-top: 2px solid rgba(184, 134, 11, 0.3);
+            border-radius: 10px;
+        }
+
+        footer a {
+            color: #000000;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: #B8860B;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .faq-section {
+                padding: 20px;
+            }
+
+            .faq-item {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Frequently Asked Questions</h1>
+            <p class="subtitle">Everything you need to know about Raw & Real</p>
+            <a href="index.html" class="back-link">← Back to Homepage</a>
+        </header>
+
+        <div class="faq-section">
+            <h2>About the Program</h2>
+            
+            <div class="faq-item">
+                <h3>Do I need to be 100% raw from day one?</h3>
+                <p>No. We work step by step. You decide the pace. I've been through every challenge myself – I know what works and what doesn't. Some people transition quickly, others take it slow. Both approaches work.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What if my family eats cooked food?</h3>
+                <p>I'll show you how to cook for them while eating raw yourself – without making two separate meals. Nicole did it with three kids. You can too. Most of my clients have families who eat cooked food. It's completely doable.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Do I need cooking skills or special equipment?</h3>
+                <p>No special skills needed. I'll teach you everything from scratch. Equipment-wise, you'll eventually want a dehydrator (for raw bread/crackers) and a good blender, but we can start with what you have at home.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What if I fail again?</h3>
+                <p>You won't. Because you won't be alone this time. I'm thorough. I leave no detail unaddressed. And I transfer my belief onto you – so you know it works. Every challenge you face, I've faced it too. I know the solutions.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2>About the Support</h2>
+            
+            <div class="faq-item">
+                <h3>How does WhatsApp support work?</h3>
+                <p>Monday to Friday, you can message me with questions, photos of your meals, struggles, wins – anything. I respond within 24 hours (usually much faster). It's like having a coach in your pocket.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What happens in the 12 calls?</h3>
+                <p>Each call is 60 minutes. We work through your specific challenges, I answer your questions, we review your progress, and we plan the next steps. Every call is tailored to where you are in your journey.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What if I need to reschedule a call?</h3>
+                <p>Just let me know at least 24 hours in advance and we'll find a new time. Life happens – I understand.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2>About Feng Shui & Soul Work</h2>
+            
+            <div class="faq-item">
+                <h3>What's included in the Feng Shui analysis?</h3>
+                <p>A complete analysis of your home – room by room, family member by family member. You'll get a detailed report with concrete optimization suggestions you can implement immediately. This helps create a space that supports your transformation.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What is "soul work" exactly?</h3>
+                <p>It's the inner work that goes beyond food. We address doubts, beliefs, emotional blocks – whatever is holding you back. Some of my tools come from shamanic practice, but you don't need to believe in anything specific. It's practical, not theoretical.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Do I need to believe in Feng Shui or shamanism for this to work?</h3>
+                <p>No. The raw food alone will transform your body. The Feng Shui and soul work are tools that support the process. Use what resonates with you, leave what doesn't.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2>Practical Questions</h2>
+            
+            <div class="faq-item">
+                <h3>What results can I expect?</h3>
+                <p>Results vary significantly by individual. Many of my clients report increased energy, better sleep, clearer skin, and natural weight release when their body is ready. The focus is on sustainable lifestyle changes, not quick fixes. Your results depend on your starting point, commitment, and individual circumstances.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Will I be hungry all the time?</h3>
+                <p>No. Raw food is high-volume, low-calorie. You'll eat more volume than before, but fewer calories. Most clients are surprised by how much they can eat. I'll teach you how to eat enough to feel satisfied.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What about social situations and eating out?</h3>
+                <p>We'll work on strategies for restaurants, parties, and family gatherings. It's completely doable. Most of my clients maintain a social life while eating raw. You just need to know how.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Is this expensive (food costs)?</h3>
+                <p>Raw food can be as cheap or expensive as you make it. Seasonal fruits and vegetables are affordable. Exotic superfoods are optional. I'll show you how to do this on any budget.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2>Investment & Payment</h2>
+            
+            <div class="faq-item">
+                <h3>Why the pilot price of €1,500?</h3>
+                <p>I'm building case studies and testimonials. The first 3 clients get the pilot price. After that, it's €3,000. Same support, same results. If you're reading this and the pilot offer is still available, book now.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I pay in installments?</h3>
+                <p>Yes. For the €3,000 program, you can pay 3 x €1,000 monthly. For the pilot price (€1,500), payment is upfront.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Is there a refund policy?</h3>
+                <p>If after the first call you feel this isn't for you, you can cancel and get a full refund. After the first call, no refunds – but I've never had anyone quit. When you're supported properly, you succeed.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2>About Amy</h2>
+            
+            <div class="faq-item">
+                <h3>What makes you different from other coaches?</h3>
+                <p>I'm thorough. I've been living raw food for years and I've experienced every challenge you'll face. I don't give you a plan and disappear – I walk with you until it works. And I combine raw food with Feng Shui and soul work, which most coaches don't do.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What's your background?</h3>
+                <p>I've been practicing raw veganism since 2014 (with some breaks). I've trained in classical compass Feng Shui, shamanism, and various body-work practices. But more important than credentials: I've lived this. I know what works because I've done it myself.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2>Still Have Questions?</h2>
+            
+            <div class="faq-item">
+                <p style="text-align: center; font-size: 1.1em;">
+                    If your question isn't answered here, <a href="mailto:info@die-wandlung.eu" style="color: #B8860B; font-weight: bold;">email me</a> or <a href="https://wa.me/436812028329" style="color: #B8860B; font-weight: bold;">message me on WhatsApp</a>.
+                </p>
+                <p style="text-align: center; margin-top: 20px;">
+                    <a href="index.html#contact" class="back-link">Book Your Free Call</a>
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <p>
+                <a href="index.html">Homepage</a> | 
+                <a href="faq.html">FAQ</a> | 
+                <a href="terms.html">Terms & Conditions</a> | 
+                <a href="privacy.html">Privacy Policy</a>
+            </p>
+            <p style="margin-top: 10px;">© 2025 Amy Lang - Raw & Real | Holistic Transformation Coaching</p>
+        </footer>
+    </div>
+</body>
+</html>
