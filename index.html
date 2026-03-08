@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raw & Real | Transform Your Body, Energy & Radiance in 12 Weeks</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Raw & Real is for women 35+ ready to joyfully attain a lean and strong body, look 10 years younger, and feel energized and radiant. No dieting. No burnout. No bullshit.">
+    <meta name="keywords" content="raw food coaching, raw vegan transformation, women 35+, weight loss, anti-aging, energy coaching, holistic transformation">
+    <meta name="author" content="Amy Lang">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5e6e8 0%, #ffe4e9 50%, #f5e6e8 100%);
+            color: #000000;
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            background: linear-gradient(135deg, #f5e6e8 0%, #ffe4e9 50%, #f5e6e8 100%);
+        }
+
+        /* Language Switcher - Top Right */
+        .language-switcher {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            z-index: 100;
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .lang-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            background: rgba(184, 134, 11, 0.1);
+            border: 2px solid #B8860B;
+            border-radius: 50px;
+            color: #000000;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .lang-link:hover, .lang-link.active {
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
+            border-color: #D4AF37;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+        }
+
+        /* Main Heading */
+        h1 {
+            font-size: clamp(3rem, 12vw, 8rem);
+            font-weight: 300;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+
+        .subtitle {
+            font-size: clamp(1.2rem, 4vw, 2rem);
+            font-weight: 300;
+            margin-bottom: 2rem;
+            color: #000000;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-tagline {
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            font-weight: 500;
+            margin: 2rem 0;
+            color: #000000;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            position: relative;
+            display: inline-block;
+            padding: 1.5rem 3rem;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            color: #000000;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            border-radius: 50px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 
+                0 10px 40px rgba(184, 134, 11, 0.3),
+                0 0 60px rgba(212, 175, 55, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.4);
+            border: 2px solid rgba(212, 175, 55, 0.5);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 
+                0 15px 60px rgba(184, 134, 11, 0.4),
+                0 0 80px rgba(212, 175, 55, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.6);
+        }
+
+        .cta-glow {
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+            animation: glow-pulse 3s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        @keyframes glow-pulse {
+            0%, 100% { opacity: 0.5; transform: scale(0.9); }
+            50% { opacity: 0.8; transform: scale(1.1); }
+        }
+
+        .cta-text {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 5rem;
+            padding: 3rem 0;
+        }
+
+        h2 {
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            font-weight: 300;
+            margin-bottom: 2rem;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: clamp(1.3rem, 4vw, 2rem);
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        p {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            margin-bottom: 1.5rem;
+            color: #000000;
+        }
+
+        /* Testimonial Section - PROMINENT */
+        .testimonial-hero {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 30px;
+            padding: 4rem 3rem;
+            margin: 5rem 0;
+            box-shadow: 0 20px 60px rgba(184, 134, 11, 0.15);
+            border: 2px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .testimonial-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .testimonial-image {
+            text-align: center;
+        }
+
+        .testimonial-image img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            border: 3px solid #D4AF37;
+        }
+
+        .testimonial-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-top: 1rem;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .testimonial-text {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: #000000;
+        }
+
+        .testimonial-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-text strong {
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+
+        /* Process Steps */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .step {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: center;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.4s ease;
+        }
+
+        .step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(184, 134, 11, 0.2);
+        }
+
+        .step-number {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        .step h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .step p {
+            font-size: 1.1rem;
+            color: #000000;
+        }
+
+        /* Pricing Card */
+        .pricing-hero {
+            background: linear-gradient(135deg, rgba(184, 134, 11, 0.1) 0%, rgba(212, 175, 55, 0.1) 100%);
+            border-radius: 30px;
+            padding: 4rem 3rem;
+            margin: 4rem 0;
+            text-align: center;
+            border: 3px solid #D4AF37;
+            box-shadow: 
+                0 20px 60px rgba(184, 134, 11, 0.2),
+                0 0 80px rgba(212, 175, 55, 0.15);
+        }
+
+        .price-tag {
+            font-size: 4rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 2rem 0;
+        }
+
+        .price-duration {
+            font-size: 1.5rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .price-features {
+            list-style: none;
+            font-size: 1.2rem;
+            margin: 2rem 0;
+            text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .price-features li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .price-features li:last-child {
+            border-bottom: none;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border: 2px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .faq-question {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .faq-answer {
+            font-size: 1.1rem;
+            color: #000000;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(0, 0, 0, 0.05);
+            padding: 3rem 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        footer a {
+            color: #B8860B;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #D4AF37;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .testimonial-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .language-switcher {
+                top: 1rem;
+                right: 1rem;
+            }
+
+            .hero {
+                padding: 1rem;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+
+            .pricing-hero {
+                padding: 2rem 1.5rem;
+            }
+
+            .price-tag {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <a href="index.html" class="lang-link active">EN</a>
+        <a href="de.html" class="lang-link">DE</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Raw & Real</h1>
+        <p class="subtitle">
+            For women 35+ ready to joyfully attain a lean and strong body,<br>
+            look 10 years younger, and feel energized and radiant.
+        </p>
+        <p class="hero-tagline">
+            No dieting. No burnout. No bullshit.
+        </p>
+        <a href="#contact" class="cta-button">
+            <span class="cta-glow"></span>
+            <span class="cta-text">BOOK YOUR FREE CALL</span>
+        </a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <!-- Nicole's Testimonial - HERO PLACEMENT -->
+        <section>
+            <h2>Real Results, Real Woman</h2>
+            <div class="testimonial-hero">
+                <div class="testimonial-content">
+                    <div class="testimonial-image">
+                        <img src="images/nicole.jpg" alt="Nicole Vogt">
+                        <div class="testimonial-name">Nicole Vogt</div>
+                    </div>
+                    <div class="testimonial-text">
+                        <p><strong>I tried going raw vegan four times. Every time, I failed.</strong></p>
+                        
+                        <p>With three young kids who wanted to keep eating cooked food, I didn't know how to walk my path without making it an issue.</p>
+                        
+                        <p><strong>Then I found Amy.</strong></p>
+                        
+                        <p>She didn't just give me a meal plan. She showed me how to walk my path while my family walks theirs – naturally, without pressure.</p>
+                        
+                        <p>Via WhatsApp (Monday to Friday) she was always there. No detail was too small. Every uncertainty, every question – she had the answer. Not theoretically. Practically.</p>
+                        
+                        <p>When I didn't know how to cook for my kids while eating raw myself – she showed me how.</p>
+                        
+                        <p>When I doubted – she gave me her <strong>unshakeable belief</strong>. That it works. That I can do it. That it can be easy.</p>
+                        
+                        <p><strong>Three months later:</strong></p>
+                        
+                        <p>I'm more energized. More focused. Mentally clearer. I need less sleep, have more energy, and feel like myself again.</p>
+                        
+                        <p><strong>And then came the moment I never expected:</strong></p>
+                        
+                        <p>Everyone in my family had a cold. I didn't.</p>
+                        
+                        <p>My husband – who always thought raw food was "too extreme" – looked at me and said: <strong>"What are you doing differently? I want to try that too."</strong></p>
+                        
+                        <p>Today he eats from my food. He asks for recipes. He's interested.</p>
+                        
+                        <p>Not because I convinced him. But because he saw how good I feel.</p>
+                        
+                        <p><strong>Amy transfers her belief onto you. And suddenly you don't doubt anymore – you just know it works.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section>
+            <h2>How It Works</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Free 20-Min Call</h3>
+                    <p>We check if Raw & Real is a fit for you. Not everyone is accepted – this protects both of us.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>12 Weeks Together</h3>
+                    <p>12 x 60-minute calls + WhatsApp support Monday to Friday. I'm with you every step of the way.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Complete Transformation</h3>
+                    <p>Raw food + Feng Shui + Soul work. Your body, energy, and radiance – transformed.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section>
+            <h2>Investment</h2>
+            <div class="pricing-hero">
+                <h3>Raw & Real Transformation</h3>
+                <div class="price-tag">€3,000</div>
+                <div class="price-duration">12 Weeks | Complete Transformation</div>
+                
+                <ul class="price-features">
+                    <li>✅ 12 x 60-minute private calls</li>
+                    <li>✅ WhatsApp support Monday–Friday</li>
+                    <li>✅ Complete Feng Shui analysis of your home</li>
+                    <li>✅ Personalized meal plans & raw food recipes</li>
+                    <li>✅ Food combining guidance</li>
+                    <li>✅ Step-by-step support for every challenge</li>
+                    <li>✅ No detail left unaddressed</li>
+                </ul>
+                
+                <p style="margin-top: 2rem; color: #666; font-size: 1rem;">
+                    Pilot offer for first 3 clients: €1,500<br>
+                    <em>(After that: €3,000)</em>
+                </p>
+                
+                <div style="margin-top: 3rem;">
+                    <a href="#contact" class="cta-button">
+                        <span class="cta-glow"></span>
+                        <span class="cta-text">BOOK YOUR FREE CALL</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Do I need to be 100% raw from day one?</div>
+                <div class="faq-answer">No. We work step by step. You decide the pace. I've been through every challenge myself – I know what works and what doesn't.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What if my family eats cooked food?</div>
+                <div class="faq-answer">I'll show you how to cook for them while eating raw yourself – without making two separate meals. Nicole did it with three kids. You can too.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Do I need cooking skills?</div>
+                <div class="faq-answer">No. I'll teach you everything. From food combining to using a dehydrator for raw bread. Everything you need to know.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What if I fail again?</div>
+                <div class="faq-answer">You won't. Because you won't be alone this time. I'm thorough. I leave no detail unaddressed. And I transfer my belief onto you – so you know it works.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What's included in the Feng Shui analysis?</div>
+                <div class="faq-answer">A complete analysis of your home – room by room, family member by family member. With concrete optimization suggestions you can implement immediately.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Why the pilot price of €1,500?</div>
+                <div class="faq-answer">I'm building case studies and testimonials. The first 3 clients get the pilot price. After that, it's €3,000. Same support, same results.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What makes you different from other coaches?</div>
+                <div class="faq-answer">I'm thorough. I've been living raw food for years and I've experienced every challenge you'll face. I don't give you a plan and disappear – I walk with you until it works.</div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section id="contact" style="text-align: center;">
+            <h2>Ready for Your Transformation?</h2>
+            <p style="font-size: 1.3rem; max-width: 700px; margin: 2rem auto;">
+                Let's find out if Raw & Real is the right fit for you.
+            </p>
+            
+            <div style="margin: 3rem 0;">
+                <p style="font-size: 1.5rem; font-weight: bold; background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                    Here's what happens next:
+                </p>
+                <ol style="text-align: left; max-width: 600px; margin: 2rem auto; font-size: 1.2rem; line-height: 2;">
+                    <li>Book your free 20-minute call below</li>
+                    <li>We talk – I check if Raw & Real is right for you</li>
+                    <li>If it's a fit, we start your transformation</li>
+                </ol>
+            </div>
+            
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin: 3rem 0;">
+                <a href="mailto:info@die-wandlung.eu" class="cta-button">
+                    <span class="cta-glow"></span>
+                    <span class="cta-text">✉️ EMAIL ME</span>
+                </a>
+                
+                <a href="https://wa.me/436812028329?text=Hi%20Amy%2C%20I'm%20interested%20in%20Raw%20%26%20Real" class="cta-button">
+                    <span class="cta-glow"></span>
+                    <span class="cta-text">💬 WHATSAPP</span>
+                </a>
+            </div>
+            
+            <p style="margin-top: 3rem; font-size: 1rem; color: #666; max-width: 700px; margin-left: auto; margin-right: auto;">
+                <strong style="background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-size: 1.1rem;">Note:</strong> 
+                In the free call, we check together if Raw & Real is suitable for your situation. Not everyone is accepted – this serves to protect both of us.
+            </p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            <a href="faq_coaching.html">FAQ</a> | 
+            <a href="agb_coaching.html">Terms</a> | 
+            <a href="datenschutz.html">Privacy</a> |
+            <a href="blog/index.html" target="_blank">Blog</a>
+        </p>
+        <p style="margin-top: 1rem;">Amy Lang - Raw & Real | Holistic Transformation Coaching</p>
+        <p>© 2025 All Rights Reserved</p>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+</body>
+</html>
