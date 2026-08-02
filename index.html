@@ -164,12 +164,15 @@
     }
 
     .intro-section { padding: clamp(26px, 5vw, 50px); }
-    .intro-container { display: grid; grid-template-columns: minmax(220px, 310px) 1fr; gap: clamp(28px, 5vw, 58px); align-items: center; }
+    .intro-container { display: block; }
     .photo-container { text-align: center; }
     .photo-ring { display: inline-block; padding: 7px; border-radius: 50%; background: var(--metal-quartz-ring); box-shadow: 0 18px 45px rgba(60,45,55,.22), inset 0 1px 0 rgba(255,255,255,.7); }
     .profile-photo { display: block; width: min(100%, 271px); aspect-ratio: 1; object-fit: cover; border-radius: 50%; border: 3px solid rgba(255,255,255,.85); }
     .photo-name { margin-top: 14px; font-weight: 760; background: var(--metal-gold-text); -webkit-background-clip: text; background-clip: text; color: transparent; }
-    .intro-text { font-size: clamp(1.02rem, 2vw, 1.16rem); }
+    .hero-photo { text-align: center; margin: 4px auto 30px; }
+    .hero-photo-ring { padding: 10px; }
+    .hero-profile-photo { width: min(85%, 340px); }
+    .intro-text { font-size: clamp(1.02rem, 2vw, 1.16rem); max-width: 860px; margin: 0 auto; }
     .intro-text p { margin-bottom: 1.15rem; }
     .lead { font-size: clamp(1.32rem, 3vw, 2rem); line-height: 1.35; font-weight: 640; letter-spacing: -.02em; }
     .mini-stats { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 23px; }
@@ -289,6 +292,9 @@
 <header>
 <p class="eyebrow">AMY DOROTHY RONJA LANG · HOLISTIC LIFESTYLE GUIDANCE</p>
 <h1>Beauty is already here.<br/><span class="gold-text">Strength is already here.</span></h1>
+<div class="hero-photo">
+<span class="photo-ring hero-photo-ring"><img alt="Amy Dorothy Ronja Lang" class="profile-photo hero-profile-photo" src="images/amy.jpg"/></span>
+</div>
 <p class="wisdom-line">Nature already holds all its wisdom within itself. It does not need to be improved. It needs the freedom to unfold.</p>
 <p class="header-subtitle">Three months in which your body, your home and your life begin to express what truly fascinates you again.</p>
 <div class="badges">
@@ -304,10 +310,6 @@
 </header>
 <section class="intro-section glass">
 <div class="intro-container">
-<div class="photo-container">
-<span class="photo-ring"><img alt="Amy Dorothy Ronja Lang" class="profile-photo" src="images/amy.jpg"/></span>
-<div class="photo-name">Amy Dorothy Ronja Lang</div>
-</div>
 <div class="intro-text">
 <p class="lead">I’m so glad you’re here.</p>
 <p>I do not believe you need to be fixed before your life is allowed to become beautiful. Beauty is already here. Strength is already here. What is often needed is not more self-optimisation, but a clear space in which what is truly yours can become visible, tangible and lived again.</p>
