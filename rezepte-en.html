@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Recipes · Living Kitchen | Die Wandlung · Raw &amp; Real</title>
+<meta content="Living raw food recipes by Amy Dorothy Ronja Lang: soups, salads, dips, crackers, pizza, quiche, desserts, ferments and a big collection of packed meals for on the go and for work." name="description"/>
+<meta content="raw food recipes, raw vegan recipes, packed lunch for work, raw food on the go, raw meal prep, raw quiche, energy balls, dehydrated crackers, living nutrition, oil-free recipes" name="keywords"/>
+<meta content="Amy Dorothy Ronja Lang" name="author"/>
+<meta content="website" property="og:type"/>
+<meta content="Living Kitchen · Recipes by Amy" property="og:title"/>
+<meta content="Raw food recipes full of colour and freshness — and more than a hundred ways to nourish yourself vibrantly through the working day." property="og:description"/>
+<link href="favicon.png" rel="icon" type="image/png"/>
+<style>
+  :root {
+    --ink:#26262c; --muted:#5b555f; --gold:#b8892c; --gold-deep:#8f6317; --gold-light:#ecd07e; --gold-shine:#fff3c9;
+    --quartz:#f0bcc6; --quartz-light:#fadde3; --quartz-shine:#fff3f5; --obsidian:#0d0d12; --pearl:#e7ebf3;
+    --paper:rgba(255,255,255,.68); --shadow:0 18px 55px rgba(38,38,52,.13); --radius:28px;
+    --metal-gold:linear-gradient(110deg,var(--gold-deep) 0%,#d9b355 30%,var(--gold-shine) 50%,#cfa440 68%,var(--gold-deep) 100%);
+    --metal-gold-soft:linear-gradient(135deg,#a97e22 0%,#e6c76e 40%,var(--gold-shine) 55%,#d3ab48 72%,#9a6f1c 100%);
+    --metal-gold-text:linear-gradient(110deg,#6e4c10 0%,#a1761c 32%,#c2952e 50%,#8d6316 70%,#6e4c10 100%);
+    --obsidian-glass:linear-gradient(150deg,#0a0a0f 0%,#17171e 34%,#33323e 48%,#14141a 60%,#060609 100%);
+    --metal-silver:linear-gradient(110deg,#99a2b2 0%,#dde3ed 34%,#ffffff 47%,#fff4d6 53%,#cdd4e0 66%,#8d95a5 100%);
+    --metal-quartz-ring:linear-gradient(135deg,#dd9dab 0%,var(--quartz-shine) 45%,#eeb3c0 60%,#cf8d9c 100%);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Avenir Next",Avenir,"Inter","Segoe UI",Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.72;
+    background:
+      radial-gradient(circle at 12% 8%,rgba(255,255,255,.85),transparent 22%),
+      radial-gradient(circle at 78% 18%,rgba(255,243,245,.75),transparent 26%),
+      radial-gradient(circle at 30% 62%,rgba(255,255,255,.5),transparent 24%),
+      radial-gradient(circle at 90% 78%,rgba(255,240,243,.6),transparent 28%),
+      linear-gradient(150deg,#eeb4c0 0%,#f8d7de 16%,var(--quartz-shine) 32%,#f1c0ca 50%,#fbe2e7 66%,#ecafbc 84%,#f7d3da 100%);
+    background-attachment:fixed;min-height:100vh}
+  a{color:inherit}
+  .container{width:min(1180px,calc(100% - 32px));margin:0 auto;padding:20px 0 56px}
+
+  .top-navigation{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:15px 20px;margin-bottom:22px;border-radius:22px;background:var(--obsidian-glass);border:1px solid rgba(222,184,88,.55);box-shadow:var(--shadow),inset 0 1px 0 rgba(255,244,214,.28),inset 0 0 22px rgba(230,199,110,.08);flex-wrap:wrap;position:relative;overflow:hidden}
+  .top-navigation::before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 44%,rgba(255,255,255,.14) 50%,transparent 56%);pointer-events:none}
+  .brand-mark{position:relative;font-size:.88rem;font-weight:700;letter-spacing:.16em;background:var(--metal-silver);-webkit-background-clip:text;background-clip:text;color:transparent;text-decoration:none}
+  .brand-mark span{background:var(--metal-gold);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .top-nav-links{position:relative;display:flex;flex-wrap:wrap;gap:8px}
+  .top-nav-links a{text-decoration:none;padding:8px 13px;border-radius:999px;font-size:.88rem;font-weight:650;background:var(--metal-silver);-webkit-background-clip:text;background-clip:text;color:transparent;border:1px solid rgba(222,184,88,.35)}
+  .top-nav-links a:hover,.top-nav-links a.active{background:var(--metal-gold-soft);-webkit-background-clip:border-box;background-clip:border-box;-webkit-text-fill-color:#241d0e;color:#241d0e;box-shadow:inset 0 1px 0 rgba(255,255,255,.55);border-color:rgba(143,99,23,.5)}
+  .nav-sep{width:1px;background:rgba(222,184,88,.35);margin:4px 2px}
+
+  header,section,footer{margin-bottom:34px}
+  header,.glass{background:var(--paper);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.85);box-shadow:var(--shadow),inset 0 1px 0 rgba(255,255,255,.9),inset 0 -1px 0 rgba(240,188,198,.45);border-radius:var(--radius)}
+  header{text-align:center;padding:clamp(42px,7vw,76px) clamp(22px,6vw,72px);position:relative;overflow:hidden}
+  header::before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;right:-140px;top:-170px;background:radial-gradient(circle at 35% 35%,rgba(255,243,201,.4),rgba(236,208,126,.12) 55%,transparent 75%)}
+  header::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 42%,rgba(255,255,255,.5) 50%,transparent 58%);pointer-events:none}
+  .eyebrow{position:relative;z-index:1;font-size:.8rem;text-transform:uppercase;letter-spacing:.2em;font-weight:750;color:#7d5f16;margin-bottom:18px}
+  h1{position:relative;z-index:1;font-size:clamp(2.45rem,7vw,5rem);line-height:1.03;letter-spacing:-.045em;font-weight:620;max-width:940px;margin:0 auto 22px}
+  .gold-text{background:var(--metal-gold-text);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 1px 0 rgba(96,66,12,.3))}
+  .wisdom-line{position:relative;z-index:1;font-size:clamp(1.12rem,2.5vw,1.55rem);line-height:1.45;max-width:820px;margin:0 auto 22px;font-weight:540}
+  .header-subtitle{position:relative;z-index:1;max-width:800px;margin:0 auto;font-size:clamp(1.02rem,2.1vw,1.2rem);color:#4a444e}
+  .badges{position:relative;z-index:1;display:flex;justify-content:center;flex-wrap:wrap;gap:5px 14px;margin:24px auto 0}
+  .star-badge{display:inline-flex;align-items:center;gap:8px;font-size:.92rem;font-weight:700;color:#6d5218}
+  .cta-row{position:relative;z-index:1;display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}
+  .cta-button{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:12px 24px;border-radius:999px;text-decoration:none;font-weight:780;letter-spacing:.02em;color:#241d0e;border:1px solid rgba(143,99,23,.45);background:var(--metal-gold-soft);box-shadow:0 12px 30px rgba(150,110,35,.28),inset 0 1px 0 rgba(255,255,255,.65),inset 0 -2px 4px rgba(120,84,15,.28);transition:transform .25s ease,box-shadow .25s ease;cursor:pointer;font-family:inherit;font-size:1rem}
+  .cta-button:hover{transform:translateY(-2px)}
+  .cta-button.secondary{background:linear-gradient(135deg,#ecb2be 0%,var(--quartz-shine) 45%,#f6ccd4 60%,#e19fae 100%);border:1px solid rgba(199,124,140,.55);box-shadow:0 8px 24px rgba(170,100,118,.2),inset 0 1px 0 rgba(255,255,255,.85),inset 0 -2px 4px rgba(180,105,122,.28)}
+
+  h2{text-align:center;font-size:clamp(1.9rem,5vw,3.1rem);line-height:1.12;letter-spacing:-.035em;font-weight:620;margin-bottom:16px}
+  .section-intro{max-width:800px;margin:0 auto 28px;text-align:center;font-size:1.06rem;color:#4d4752}
+  .pad{padding:clamp(26px,5vw,52px)}
+
+  /* Obsidian-Bühne für die Job-Kategorie */
+  .obsidian{padding:clamp(30px,6vw,64px);background:var(--obsidian-glass);border-radius:34px;border:1px solid rgba(222,184,88,.6);box-shadow:0 24px 70px rgba(10,10,18,.4),inset 0 1px 0 rgba(255,244,214,.3),inset 0 0 34px rgba(230,199,110,.07);overflow:hidden;position:relative}
+  .obsidian::before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 38%,rgba(255,255,255,.09) 46%,rgba(255,255,255,.16) 49%,rgba(255,255,255,.05) 53%,transparent 62%),linear-gradient(115deg,transparent 68%,rgba(255,255,255,.06) 74%,transparent 80%);pointer-events:none}
+  .obsidian::after{content:"";position:absolute;inset:auto -110px -150px auto;width:330px;height:330px;border-radius:50%;background:radial-gradient(circle at 40% 40%,rgba(236,208,126,.22),transparent 70%);pointer-events:none}
+  .obsidian > *{position:relative;z-index:1}
+  .obsidian h2{background:var(--metal-gold-soft);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .obsidian .section-intro,.obsidian p{color:var(--pearl)}
+  .job-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:10px}
+  .job-card{padding:24px;border-radius:22px;background:linear-gradient(160deg,rgba(255,255,255,.1),rgba(255,255,255,.03));border:1px solid rgba(230,199,110,.4);box-shadow:inset 0 1px 0 rgba(255,244,214,.22)}
+  .job-card strong{display:block;font-size:1.18rem;line-height:1.3;margin-bottom:8px;background:linear-gradient(110deg,#dcb453,var(--gold-shine) 50%,#d3a63e);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .job-card p{font-size:.98rem}
+  .job-card.wide{grid-column:1/-1;background:linear-gradient(135deg,rgba(230,199,110,.2),rgba(255,255,255,.07) 55%,rgba(240,188,198,.13));border-color:rgba(230,199,110,.55)}
+  .week{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:14px}
+  .day{padding:12px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(230,199,110,.3);font-size:.9rem;color:var(--pearl)}
+  .day b{display:block;color:var(--gold-light);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+
+  /* Baukasten */
+  .builder{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:20px}
+  .builder-col{padding:22px;border-radius:22px;background:rgba(255,255,255,.06);border:1px solid rgba(230,199,110,.4)}
+  .builder-col h3{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-light);margin-bottom:10px}
+  .builder-col ul{list-style:none}
+  .builder-col li{color:var(--pearl);padding:4px 0 4px 22px;position:relative;font-size:.95rem}
+  .builder-col li::before{content:"✦";position:absolute;left:0;color:var(--gold-light)}
+  .combo{margin-top:22px;text-align:center}
+  .combo-result{margin:18px auto 0;max-width:820px;min-height:86px;padding:22px 26px;border-radius:22px;background:linear-gradient(135deg,rgba(230,199,110,.22),rgba(255,255,255,.08) 55%,rgba(240,188,198,.14));border:1px solid rgba(230,199,110,.55);font-size:clamp(1.05rem,2.3vw,1.3rem);color:var(--pearl);line-height:1.5}
+  .combo-result em{font-style:normal;background:linear-gradient(110deg,#dcb453,var(--gold-shine) 50%,#d3a63e);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:750}
+
+  /* Filter */
+  .filter-wrap{position:sticky;top:10px;z-index:20;padding:16px 18px;margin-bottom:22px;background:linear-gradient(160deg,rgba(255,250,251,.97),rgba(252,236,240,.97)) !important}
+  .search{width:100%;padding:13px 18px;border-radius:999px;border:1px solid rgba(184,137,44,.35);background:rgba(255,255,255,.88);font:inherit;font-size:1rem;color:var(--ink);outline:none;box-shadow:inset 0 1px 3px rgba(60,40,50,.08)}
+  .search:focus{border-color:var(--gold)}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  .chip{border:1px solid rgba(184,137,44,.32);background:linear-gradient(135deg,rgba(255,255,255,.92),rgba(250,221,227,.6));padding:7px 14px;border-radius:999px;font:inherit;font-size:.88rem;font-weight:680;color:#4a3d22;cursor:pointer;box-shadow:inset 0 1px 0 rgba(255,255,255,.9);transition:all .2s ease}
+  .chip:hover{border-color:rgba(143,99,23,.6)}
+  .chip.on{background:var(--metal-gold-soft);color:#241d0e;border-color:rgba(120,84,15,.55);box-shadow:0 6px 16px rgba(150,110,35,.25),inset 0 1px 0 rgba(255,255,255,.6)}
+  .chip.star{background:var(--obsidian-glass);color:var(--gold-light);border-color:rgba(222,184,88,.6)}
+  .chip.star.on{background:var(--metal-gold-soft);color:#241d0e}
+  .subchips{display:none;margin-top:10px;padding-top:10px;border-top:1px dashed rgba(184,137,44,.35)}
+  .subchips.show{display:flex}
+  .count{margin-top:10px;font-size:.86rem;color:var(--muted);font-weight:600}
+
+  /* Rezeptkarten */
+  .recipe-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:start}
+  .recipe{border-radius:24px;background:linear-gradient(160deg,rgba(255,255,255,.86),rgba(250,231,235,.6));border:1px solid rgba(184,137,44,.28);box-shadow:0 12px 34px rgba(45,45,60,.08),inset 0 1px 0 rgba(255,255,255,.95),inset 0 -1px 0 rgba(240,188,198,.4);overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}
+  .recipe:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(150,110,35,.16),inset 0 1px 0 rgba(255,255,255,.95)}
+  .recipe-top{height:8px;background:var(--metal-gold-soft)}
+  .recipe.job .recipe-top{background:var(--obsidian-glass);border-bottom:1px solid rgba(222,184,88,.6)}
+  .recipe-body{padding:20px 22px 22px}
+  .r-cat{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:750;color:#7d5f16}
+  .recipe h3{font-size:1.22rem;line-height:1.28;margin:4px 0 8px;background:var(--metal-gold-text);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .r-desc{font-size:.94rem;color:#4d4752;margin-bottom:10px}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+  .tag{font-size:.74rem;font-weight:700;padding:3px 10px;border-radius:999px;background:rgba(255,255,255,.9);border:1px solid rgba(184,137,44,.3);color:#5d4a1c}
+  .tag.dark{background:#17171e;color:var(--gold-light);border-color:rgba(222,184,88,.5)}
+  details summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;font-weight:750;font-size:.9rem;color:#241d0e;background:linear-gradient(135deg,#ecb2be 0%,var(--quartz-shine) 45%,#f6ccd4 60%,#e19fae 100%);border:1px solid rgba(199,124,140,.5);box-shadow:inset 0 1px 0 rgba(255,255,255,.85)}
+  details summary::-webkit-details-marker{display:none}
+  details[open] summary{background:var(--metal-gold-soft);border-color:rgba(143,99,23,.5)}
+  .r-inner{margin-top:16px}
+  .r-inner h4{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:#7d5f16;margin:12px 0 6px}
+  .gold-list{list-style:none}
+  .gold-list li{position:relative;padding-left:22px;margin:5px 0;font-size:.95rem}
+  .gold-list li::before{content:"✦";position:absolute;left:0;top:0;color:var(--gold-deep)}
+  ol.steps{padding-left:22px}
+  ol.steps li{margin:6px 0;font-size:.95rem}
+  ol.steps li::marker{color:var(--gold-deep);font-weight:800}
+  .tip{margin-top:12px;padding:12px 14px;border-radius:14px;background:rgba(255,243,201,.55);border:1px solid rgba(184,137,44,.3);font-size:.92rem}
+  .tip b{color:#7d5f16}
+  .tag.gold{background:var(--metal-gold-soft);color:#241d0e;border-color:rgba(120,84,15,.5)}
+  .gourmet{margin-top:14px;padding:14px 16px;border-radius:16px;background:linear-gradient(135deg,rgba(255,243,201,.7),rgba(250,221,227,.55));border:1px solid rgba(184,137,44,.35)}
+  .gourmet h4{margin-top:0 !important}
+  .g-note{font-size:.9rem;color:#5b4a22;margin-bottom:4px}
+  .principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;text-align:left;margin-top:8px}
+  .principle{padding:22px;border-radius:22px;background:linear-gradient(160deg,rgba(255,255,255,.86),rgba(250,231,235,.6));border:1px solid rgba(184,137,44,.28);box-shadow:inset 0 1px 0 rgba(255,255,255,.95)}
+  .principle h3{font-size:1.1rem;margin-bottom:6px;background:var(--metal-gold-text);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .principle p{font-size:.95rem;color:#4d4752}
+  .principle.wide{grid-column:1/-1;background:linear-gradient(135deg,rgba(255,243,201,.75),rgba(255,255,255,.85) 55%,rgba(250,221,227,.7))}
+  @media (max-width:980px){.principles{grid-template-columns:1fr}}
+  .empty{text-align:center;padding:40px;color:var(--muted);display:none}
+
+  .footer{padding:30px;background:var(--obsidian-glass);border-radius:28px;border:1px solid rgba(222,184,88,.6);box-shadow:var(--shadow),inset 0 1px 0 rgba(255,244,214,.28);position:relative;overflow:hidden;text-align:center}
+  .footer::before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.08) 49%,transparent 58%);pointer-events:none}
+  .footer > *{position:relative}
+  .footer p{color:#c9cfdb;font-size:.86rem;max-width:900px;margin:0 auto 10px}
+  .footer-buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:22px}
+  .footer-button{text-decoration:none;border:1px solid rgba(230,199,110,.65);border-radius:999px;padding:9px 16px;font-size:.9rem;font-weight:650;color:var(--pearl);background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(230,199,110,.06));transition:background .25s ease,color .25s ease}
+  .footer-button:hover{background:var(--metal-gold-soft);color:#241d0e}
+
+  @media (max-width:980px){.recipe-grid,.job-grid,.builder{grid-template-columns:repeat(2,minmax(0,1fr))}.week{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media (max-width:680px){.recipe-grid,.job-grid,.builder{grid-template-columns:1fr}.top-navigation{justify-content:center;text-align:center}.container{width:min(100% - 20px,1180px)}.filter-wrap{position:static}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<nav class="top-navigation">
+  <a class="brand-mark" href="https://gorawandreal.com/index.html">DIE <span>WANDLUNG</span> · RAW &amp; REAL</a>
+  <div class="top-nav-links">
+    <a href="https://gorawandreal.com/index.html">Home</a>
+    <a href="blog/index.html">Blog</a>
+    <a class="active" href="rezepte-en.html">Recipes</a>
+    <span class="nav-sep"></span>
+    <a class="active" href="rezepte-en.html" lang="en">EN</a>
+    <a href="rezepte.html" lang="de">DE</a>
+    <a href="rezepte-hu.html" lang="hu">HU</a>
+  </div>
+</nav>
+
+<header>
+  <p class="eyebrow">LIVING KITCHEN · RECIPES BY AMY</p>
+  <h1>Food that is alive<br/><span class="gold-text">passes life on.</span></h1>
+  <p class="wisdom-line">Colour, freshness and all the wisdom of nature — prepared so simply that it fits into your real everyday life.</p>
+  <p class="header-subtitle">Here you will find my favourite raw food recipes: from sunny gazpacho and crispy crackers from the dehydrator to a creamy chocolate cake. Every recipe tastes good pure and mild — if you like it bolder, you will find salt, spices, garlic and ginger in each gourmet version. And because so many of you ask me how to nourish yourself vibrantly through a working day, there is a large collection of its own for on the go and for work.</p>
+  <div class="badges">
+    <span class="star-badge">✦ 100% plant-based</span>
+    <span class="star-badge">✦ Raw &amp; living</span>
+    <span class="star-badge">✦ No oil &amp; no vinegar</span>
+    <span class="star-badge">✦ No oven</span>
+    <span class="star-badge">✦ Made for everyday life</span>
+  </div>
+  <div class="cta-row">
+    <a class="cta-button" href="#job">On the go &amp; for work</a>
+    <a class="cta-button secondary" href="#rezepte">Discover all recipes</a>
+  </div>
+</header>
+
+<section class="obsidian" id="job">
+  <h2>On the Go &amp; for Work</h2>
+  <p class="section-intro">If you sit at a till all day, stand in a shop, commute or rush from appointment to appointment, you can't always live on fruit alone — and you don't have to. This collection is for everyone who wants to refuel during a short break with something filling, savoury or sweet: as naturally as with a ham sandwich, only alive.</p>
+
+  <div class="job-grid">
+    <article class="job-card wide">
+      <strong>The principle: prepare once, enjoy all week</strong>
+      <p>The dehydrator is your quiet helper. At the weekend it runs overnight, and on Monday you have bread, crackers, cookies and chips for many days. Add two or three dips in screw-top jars and cut vegetables in a box — and in the morning you simply grab and go.</p>
+      <div class="week">
+        <div class="day"><b>Saturday</b>Crackers, bread and banana sticks into the dehydrator, start the hemp heart cream</div>
+        <div class="day"><b>Sunday</b>Blend two dips, roll energy balls, cut vegetables</div>
+        <div class="day"><b>Mon – Wed</b>Bread with spread, sticks with dip, a little something sweet</div>
+        <div class="day"><b>Wednesday</b>Fresh supplies: salad in a jar or lasagne for two days</div>
+        <div class="day"><b>Thu – Fri</b>Cracker stock, ferments with hemp sauce, brownies</div>
+      </div>
+    </article>
+    <article class="job-card">
+      <strong>No fridge needed</strong>
+      <p>Dehydrated bread, crackers, cookies, energy balls, nuts, fruit leather and chips keep all day in your bag. These recipes carry the label “no fridge”.</p>
+    </article>
+    <article class="job-card">
+      <strong>With a cool bag or staff fridge</strong>
+      <p>Dips, lasagne, salads in a jar, ferments and anything creamy are happiest kept cool. A small ice pack usually lasts until lunchtime.</p>
+    </article>
+    <article class="job-card">
+      <strong>One-hand snacks for short breaks</strong>
+      <p>When you only have five minutes: balls, bars, stuffed dates, nori rolls and sandwiches that don't crumble or drip.</p>
+    </article>
+  </div>
+
+  <h2 style="margin-top:48px">Your Packed-Lunch Builder</h2>
+  <p class="section-intro">Choose a base, something to spread or fill and a little extra. These three columns alone give you more than five hundred combinations — you won't repeat yourself any time soon.</p>
+  <div class="builder">
+    <div class="builder-col"><h3>1 · Base</h3><ul id="b1"></ul></div>
+    <div class="builder-col"><h3>2 · Spread &amp; filling</h3><ul id="b2"></ul></div>
+    <div class="builder-col"><h3>3 · Extras &amp; sweets</h3><ul id="b3"></ul></div>
+  </div>
+  <div class="combo">
+    <button class="cta-button" id="comboBtn" type="button">✦ Surprise me with my packed lunch</button>
+    <div class="combo-result" id="combo">Press the button and I'll put together a packed lunch for tomorrow.</div>
+  </div>
+  <div class="cta-row">
+    <a class="cta-button secondary" href="#rezepte" onclick="setCat('job')">See all work recipes</a>
+  </div>
+</section>
+
+<section class="pad glass" id="rezepte">
+  <h2>All Recipes</h2>
+  <p class="section-intro">Search for an ingredient that is waiting in your kitchen, or browse the categories. A click on “Open recipe” shows you the ingredients and method.</p>
+
+  <div class="filter-wrap glass">
+    <input class="search" id="search" placeholder="Search for a recipe or ingredient … e.g. walnut, courgette, cacao" type="search"/>
+    <div class="chips" id="chips"></div>
+    <div class="chips subchips" id="subchips">
+      <button class="chip on" data-sub="all" type="button">All work recipes</button>
+      <button class="chip" data-sub="o" type="button">No fridge</button>
+      <button class="chip" data-sub="k" type="button">With cool bag</button>
+      <button class="chip" data-sub="h" type="button">One-hand snack</button>
+    </div>
+    <div class="count" id="count"></div>
+  </div>
+
+  <div class="recipe-grid" id="grid"></div>
+  <p class="empty" id="empty">I don't have a recipe for this search yet — try another ingredient.</p>
+</section>
+
+<section class="pad glass" id="prinzipien">
+  <h2>The Foundations of My Living Kitchen</h2>
+  <p class="section-intro">Simple, pure ingredients that are allowed to speak for themselves. That keeps every dish easy to digest and delicious even without strong seasoning.</p>
+  <div class="principles">
+    <article class="principle wide">
+      <h3>✦ Fermented hemp heart cream — instead of oil, cream and cheese</h3>
+      <p>Blend hulled hemp hearts <b>without soaking</b> with a splash of water into a smooth, thick cream, pour into a clean jar and leave at room temperature for <b>about one day</b>. It turns slightly tangy, fresh and delicately cheesy — and makes dressings round, dips creamy and fillings silky. <b>Alternative:</b> macadamia nuts, soaked for 4 hours and prepared the same way, make an especially mild, buttery cream.</p>
+    </article>
+    <article class="principle">
+      <h3>No oil, no vinegar</h3>
+      <p>Instead of oil I use hemp heart cream, avocado, tahini or almond butter. Lemon, lime or orange bring the acidity.</p>
+    </article>
+    <article class="principle">
+      <h3>Chives instead of garlic</h3>
+      <p>Chives are my standard, wild garlic the wonderful spring alternative. Fresh herbs such as basil, parsley, dill or mint always belong.</p>
+    </article>
+    <article class="principle">
+      <h3>Gourmet version</h3>
+      <p>Salt, spices, garlic, ginger, cinnamon, turmeric and tamari are listed with every recipe as an optional gourmet version. Where a dish only gets its character from them, this is noted separately.</p>
+    </article>
+    <article class="principle">
+      <h3>Dehydrating at 42 °C</h3>
+      <p>All drying times are for 42 °C, so that the ingredients keep their vitality.</p>
+    </article>
+    <article class="principle">
+      <h3>Activating &amp; sprouting</h3>
+      <p>Soak nuts and seeds for 6–12 hours and rinse. Soak buckwheat for 30 minutes, rinse and let it sprout for 1–2 days until little tails appear.</p>
+    </article>
+    <article class="principle">
+      <h3>Measurements</h3>
+      <p>One cup is about 240 ml, one tbsp about 15 ml, one tsp about 5 ml.</p>
+    </article>
+  </div>
+</section>
+
+<section class="pad glass" style="text-align:center">
+  <h2>Hungry for More Than Recipes?</h2>
+  <p class="section-intro">In my personal nutrition consulting we find your own way together. If you sense that living nutrition wants to become a firm part of your life — with guidance that fits your everyday life, your family and your job — let's talk.</p>
+  <div class="cta-row">
+    <a class="cta-button" href="https://gorawandreal.com/index.html#contact">Complimentary discovery call</a>
+    <a class="cta-button secondary" href="https://wa.me/4368120283291?text=Hello%20Amy%2C%20I%20discovered%20your%20recipes">WhatsApp</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-buttons">
+    <a class="footer-button" href="https://gorawandreal.com/index.html">Home</a>
+    <a class="footer-button" href="erstgespraech.html">Book a call</a>
+    <a class="footer-button" href="faq_coaching.html">FAQ</a>
+    <a class="footer-button" href="agb_coaching.html">Terms</a>
+    <a class="footer-button" href="datenschutz.html">Privacy Policy</a>
+  </div>
+  <p>The recipes are meant as inspiration. My nutrition consulting is intended for healthy people and is provided by my sole proprietorship based in Hungary (táplálkozási tanácsadás), owner: Amy Dora Lang, Petőfi utca 19., 8281 Szentbékkálla, Hungary. Medical diagnosis and treatment, dietetic therapy for illnesses and psychotherapy are provided by the professions legally authorised to do so.</p>
+  <p>© 2026 Amy Dorothy Ronja Lang — Die Wandlung · Raw &amp; Real. All rights reserved.</p>
+</footer>
+</div>
+
+<script>
+/* ---------- Kategorien ---------- */
+const CATS = [
+  ["job","★ On the go & for work"],
+  ["suppe","Soups"],["salat","Salads"],["dip","Dips & Spreads"],
+  ["wrap","Tacos & Wraps"],["brot","Breads & Crackers"],["haupt","Pizza, Quiche & Mains"],
+  ["snack","Snacks, Cookies & Bars"],["torte","Cakes & Desserts"],["kaese","Cheese & Ferments"],["morgen","Breakfast & Smoothies"]
+];
+const CATNAME = Object.fromEntries(CATS);
+
+/* ---------- Recipes ---------- */
+const D = [];
+function r(c,t,desc,z,s,o){ o=o||{}; D.push(Object.assign({},o,{c,t,desc,z:z.split("|"),s:s.split("|"),gm:o.gm?o.gm.split("|"):[]})); }
+const HC="fermented hemp heart cream (or macadamia cream)";
+
+/* ===== BASIC RECIPE ===== */
+r("dip","Fermented Hemp Heart Cream (Basic Recipe)","The soul of my kitchen: it replaces oil, cream and cheese, rounds off dressings, makes dips creamy and fillings silky.",
+"1 cup hulled hemp hearts (do not soak)|a splash of water, about ¼ cup|Alternative: 1 cup macadamia nuts, soaked for 4 hours and rinsed",
+"Blend the hemp hearts without soaking with a splash of water into a smooth, thick cream — as little water as possible, as much as necessary.|Pour into a clean jar and rest the lid loosely on top.|Leave at room temperature for about one day. The cream turns slightly tangy, fresh and develops a delicate, cheesy character.|Then close the jar and keep it in the fridge.",
+{tip:"Make a jar twice a week and you will always have some ready. With macadamia it becomes especially mild and buttery.",j:"k",d:"3–4 days"});
+
+/* ===== ON THE GO & FOR WORK ===== */
+r("job","Dehydrated Bread Sandwich with Sunflower Spread","The living counterpart to the classic packed sandwich — filling, savoury, crumb-free.",
+"2 slices raw herb bread (see Breads & Crackers)|3 tbsp sunflower seed spread|a few cucumber slices|1 handful sprouts or rocket|1 tomato (add only at break time)",
+"Spread thickly on both slices of bread — the spread protects the bread from moisture.|Layer cucumber and sprouts in between and close.|Wrap in baking paper; take the tomato separately in a small container.",
+{gm:"a pinch of salt|freshly ground pepper",tip:"Make two sandwiches at once — the second keeps in the fridge until the next day.",j:"k",h:1,d:"1–2 days"});
+r("job","Veggie Stick Box with Three Dips","Crunchy, colourful and quickly packed — the box that saves the afternoon.",
+"2 carrots|1 piece of cucumber|1 red pepper|3 celery sticks|a few kohlrabi sticks|3 tbsp each of courgette hummus, guacamole and hemp sour cream",
+"Cut the vegetables into finger-length sticks.|Stand them upright in a tall box or a wide screw-top jar.|Fill the dips into small jars and pack them alongside.",
+{tip:"Carrot and celery sticks stay crisp for up to four days in a jar with a little water in the fridge.",j:"k",d:"3–4 days"});
+r("job","Creamy Hemp Sauce","Fresh, lemony and rich in valuable protein — the sauce for everything fermented, for salads and veggie sticks.",
+"½ cup "+HC+"|juice of ½ lemon|3–4 tbsp water|1 small bunch chives or fresh dill",
+"Stir the hemp heart cream with lemon juice and water until pourable.|Finely chop the chives or dill and stir in.",
+{gm:"1 small garlic clove or 3 wild garlic leaves|a pinch of salt|pepper",tip:"Also wonderful over leafy salad or as a spread.",j:"k",d:"3 days"});
+r("job","Sauerkraut Bowl with Hemp Sauce","Fermented, crunchy and creamy in one box — strengthening and filling for a long time.",
+"1 cup sauerkraut (see Cheese & Ferments)|1 carrot, grated|½ apple, diced|1 handful sunflower seeds, activated|3 tbsp creamy hemp sauce|1 handful baby spinach",
+"Lay the spinach in the box as a bed.|Arrange sauerkraut, carrot and apple side by side.|Put the hemp sauce in a separate little jar and pour over at break time.|Sprinkle with sunflower seeds.",
+{gm:"a few caraway seeds",tip:"The apple brings a gentle sweetness that rounds off the sauerkraut beautifully.",j:"k",d:"2 days"});
+r("job","Kimchi Wrap with Hemp Sauce","Fresh, tangy and easy to hold in one hand.",
+"1 flaxseed tortilla|3 tbsp kimchi (see Cheese & Ferments)|2 tbsp creamy hemp sauce|½ avocado in strips|cucumber strips|a few lettuce leaves",
+"Spread the tortilla with hemp sauce.|Top with lettuce, kimchi, avocado and cucumber.|Roll up tightly and wrap in baking paper.",
+{tip:"A drop of lemon on the avocado keeps it nicely green until your break.",j:"k",h:1,d:"1 day"});
+r("job","Dehydrated Banana Sticks","Sweet as caramel, handy as a chocolate bar.",
+"4 ripe bananas|juice of ½ lemon|optional: a little cacao powder",
+"Quarter the bananas lengthwise.|Brush with lemon juice and dust with cacao if you like.|Dehydrate at 42 °C for 12–16 hours until chewy-soft.",
+{gm:"cinnamon for dusting",tip:"Stored in a jar they keep for weeks.",j:"o",h:1,d:"several weeks"});
+r("job","Crispy Apple Chips","The crunchy nibble for in between.",
+"4 sweet apples|juice of ½ lemon",
+"Slice the apples wafer-thin with a mandoline.|Drizzle with lemon juice.|Dehydrate at 42 °C for 10–14 hours until crisp.",
+{gm:"1 tsp cinnamon",tip:"Kept airtight they stay crisp.",j:"o",h:1,d:"several weeks"});
+r("job","Kale Chips with Pepper Cream","Crispy and full of green power — a bag of crisps, but alive.",
+"1 bunch kale|½ cup "+HC+"|1 red pepper|juice of ½ lemon",
+"Strip the kale from the stems and tear into bite-size pieces.|Blend hemp heart cream, pepper and lemon into a thick cream.|Massage it into the leaves and spread loosely on dehydrator trays.|Dehydrate at 42 °C for 10–12 hours.",
+{gm:"½ tsp salt|1 tsp smoked paprika|1 garlic clove",tip:"Make a double batch — they disappear faster than you think.",j:"o",h:1,d:"2 weeks"});
+r("job","Courgette Herb Chips","Light and wonderfully crispy.",
+"2 courgettes|juice of ½ lemon|fresh thyme or chives, very finely chopped",
+"Slice the courgettes wafer-thin.|Gently toss with lemon juice and herbs.|Dehydrate at 42 °C for 10–12 hours.",
+{gm:"½ tsp salt|garlic powder|dried Italian herbs",g:1,j:"o",h:1,d:"2 weeks"});
+r("job","Tomato Chips with Basil","Concentrated summer flavour to nibble on.",
+"6 firm, ripe tomatoes|1 handful fresh basil, finely chopped",
+"Cut the tomatoes into 5 mm slices.|Sprinkle with basil.|Dehydrate at 42 °C for 12–18 hours until they snap.",
+{gm:"dried oregano|a pinch of salt",j:"o",h:1,d:"2 weeks"});
+r("job","Crunchy Dehydrated Almonds","The nutty moment that carries you through the afternoon.",
+"2 cups almonds",
+"Soak the almonds for 12 hours and rinse well.|Dehydrate at 42 °C for 12–24 hours until crunchy all the way through.",
+{gm:"2 tbsp tamari mixed in before dehydrating|½ tsp smoked paprika",tip:"The gourmet version turns them into savoury tamari almonds. A handful in a small jar fits in any jacket pocket.",j:"o",h:1,d:"4 weeks"});
+r("job","Crunchy Seeds","Crunchy and filling.",
+"1 cup pumpkin seeds|1 cup sunflower seeds|juice of ½ lemon",
+"Soak the seeds for 6 hours and rinse.|Mix with lemon juice.|Dehydrate at 42 °C for 12–18 hours.",
+{gm:"1 tbsp tamari|1 tsp curry powder|a pinch of chilli",j:"o",h:1,d:"4 weeks"});
+r("job","Living Trail Mix","The colourful mix for your apron pocket.",
+"½ cup activated almonds|½ cup walnuts|¼ cup pumpkin seeds|¼ cup raisins|¼ cup mulberries|2 tbsp cacao nibs|2 tbsp coconut chips",
+"Mix everything in a large bowl.|Portion into small jars or cloth bags.",
+{j:"o",h:1,d:"4 weeks"});
+r("job","Nori Snack Rolls with Avocado","Mini sushi for the hand — refreshing and filling.",
+"2 nori sheets|1 avocado|½ cucumber|1 carrot|sprouts|a squeeze of lemon",
+"Cut the nori sheets into quarters.|Mash the avocado with lemon and spread on each quarter.|Top with vegetable sticks and sprouts and roll into cones or little rolls.",
+{gm:"a few drops of tamari in the avocado",tip:"Roll them in the morning so the nori stays crisp.",j:"k",h:1,d:"1 day"});
+r("job","Sushi Bowl in a Jar","Everything you love about sushi, layered in a screw-top jar.",
+"1 cup cauliflower rice with 1 tsp lemon juice|½ avocado|diced cucumber|carrot strips|1 tbsp sesame seeds|1 nori sheet, torn|Dressing: 1 tbsp "+HC+" and 1 tsp lime juice",
+"Put the dressing at the bottom of the jar.|Layer cucumber and carrot, then the cauliflower rice.|Avocado, sesame and nori go on top.|At break time tip into a bowl and mix.",
+{gm:"1 tbsp tamari in the dressing|1 tsp freshly grated ginger",j:"k",d:"1 day"});
+r("job","Salad in a Jar","The dressing waits at the bottom, the greens stay fresh on top — until the first bite.",
+"3 tbsp creamy hemp sauce|cucumber, pepper, carrot, radishes|cherry tomatoes|1 handful sunflower seeds|lettuce or baby spinach",
+"Hemp sauce at the very bottom of the jar.|Then the firm vegetables, then tomatoes and seeds.|The tender leaves on top.|Close tightly and carry upright.",
+{gm:"a pinch of salt and pepper in the dressing",tip:"A 1-litre jar really fills you up and keeps for three days in the fridge.",j:"k",d:"3 days"});
+r("job","Courgette Spaghetti in a Jar with Marinara","A pasta feeling for your lunch break.",
+"1 large courgette, spiralised|½ cup marinara sauce|½ cup walnut mushroom mince|fresh basil|1 tbsp almond crumbs",
+"Sauce at the bottom of the jar.|Mince on top, then the courgette noodles.|Basil and almond crumbs on top.|Tip into a bowl and mix before eating.",
+{gm:"dried oregano|a pinch of salt over the almond crumbs",j:"k",d:"2 days"});
+r("job","Cucumber Boats with Herb Cream Cheese","Cool, creamy, refreshing.",
+"2 mini cucumbers|4 tbsp herb cream cheese|cress or chives",
+"Halve the cucumbers lengthwise and scrape out the seeds with a teaspoon.|Fill with cream cheese.|Sprinkle with cress or chives.",
+{gm:"paprika for dusting|a pinch of salt",j:"k",h:1,d:"1–2 days"});
+r("job","Pepper Boats with Walnut Filling","Savoury, crunchy and eaten without cutlery.",
+"2 pointed peppers|1 cup walnut mushroom mince|2 tbsp guacamole|coriander or parsley",
+"Halve the peppers lengthwise and deseed.|Fill with the walnut mixture.|Top with a dollop of guacamole and fresh herbs.",
+{j:"k",h:1,d:"2 days"});
+r("job","Falafel Box with Tahini","Filling balls, fresh vegetables and a creamy dip.",
+"6 raw falafel|diced cucumber and tomato|a few lettuce leaves|3 tbsp tahini stirred smooth with lemon juice and water|parsley",
+"Lay the lettuce in the box.|Arrange falafel and vegetables alongside.|Take the tahini sauce separately.|At break time wrap falafel and vegetables in a lettuce leaf.",
+{gm:"garlic and a pinch of salt in the tahini sauce",j:"k",h:1,d:"4 days"});
+r("job","Hummus Wrap","Creamy, fresh and handy.",
+"1 flaxseed tortilla|3 tbsp courgette hummus|grated carrot|red cabbage, finely sliced|sprouts|1 handful rocket",
+"Spread the tortilla thickly with hummus.|Top with the vegetables.|Roll up tightly and cut diagonally in half.",
+{j:"k",h:1,d:"1 day"});
+r("job","Pizza Slices to Go","A slice of pizza for your break — without an oven.",
+"1 raw pizza base|4 tbsp marinara sauce|macadamia cream cheese|sun-dried tomatoes (unsalted), soaked|fresh basil",
+"Spread the pizza base with marinara.|Top with cream cheese and tomatoes.|Dehydrate at 42 °C for another 2 hours so the topping sets.|Cut into pieces, top with basil and wrap individually.",
+{gm:"black olives|dried oregano",tip:"The short extra drying means nothing drips and the pieces are easy to hold.",j:"k",h:1,d:"3 days"});
+r("job","Mini Quiche Tartlets","The quiche in handy format — perfect for your lunch box.",
+"Base and filling of the raw quiche (see Pizza, Quiche & Mains)|12 silicone muffin moulds",
+"Press the base mixture into the moulds and form a small rim.|Fill with the filling.|Dehydrate at 42 °C for 6–8 hours until the surface is firm.|Release from the moulds and keep cool.",
+{gm:"the gourmet spices of the quiche",j:"k",h:1,d:"4 days"});
+r("job","Beetroot Salad in a Jar","Glowing, earthy and strengthening.",
+"1 beetroot, grated|1 apple, grated|2 tbsp walnuts|2 tbsp "+HC+"|juice of ½ lemon|chives",
+"Mix beetroot and apple.|Stir the hemp heart cream with lemon and fold in.|Fill into a jar, walnuts and chives on top.",
+{gm:"1 tbsp freshly grated horseradish|a pinch of salt",tip:"Even better on the second day.",j:"k",d:"3 days"});
+r("job","Fermented Carrot Sticks","Crunchy, tangy and full of living cultures — without salt brine.",
+"500 g carrots|about 500 ml freshly pressed celery juice (from 1 head of celery)|1 handful fresh dill",
+"Cut the carrots into sticks and stand them upright in a clean clip-top jar.|Tuck the dill in between and pour over celery juice until everything is covered.|Weigh down with a small glass and ferment at room temperature for 3–5 days, then refrigerate.",
+{gm:"classic brine: 1 tbsp salt in 500 ml water instead of celery juice|2 garlic cloves|1 slice ginger",tip:"A dream dipped in creamy hemp sauce.",j:"k",h:1,d:"4 weeks"});
+r("job","Hemp Yoghurt in a Jar","Creamy and fresh, layered with berries and granola.",
+"½ cup fermented hemp heart cream|3–4 tbsp water|a squeeze of lemon|berries and raw granola for layering",
+"Stir the hemp heart cream with water and lemon to a yoghurt-like consistency.|Layer in the jar with berries.|Add the granola only in the morning so it stays crunchy.",
+{gm:"a little vanilla",j:"k",d:"3 days"});
+r("job","Raw Apple Sauce","Like Grandma used to make — just freshly blended.",
+"3 apples|2 dates|1 tbsp lemon juice|a little water",
+"Core the apples and chop roughly.|Blend with all ingredients into a purée.|Fill into a jar.",
+{gm:"½ tsp cinnamon",j:"k",d:"2 days"});
+r("job","Stuffed Dates","The smallest meal in the world — and one of the happiest.",
+"12 Medjool dates|4 tbsp almond butter|12 walnut halves|optional: cacao nibs",
+"Slit the dates lengthwise and remove the stones.|Fill with almond butter and press in a walnut.|Crown with cacao nibs if you like.",
+{gm:"a pinch of sea salt flakes",j:"o",h:1,d:"1 week"});
+r("job","Buckwheat Nut Bars","Crunchy, filling and easy to pack.",
+"1 cup sprouted, dehydrated buckwheat|½ cup almonds, chopped|½ cup dates|2 tbsp almond butter|2 tbsp desiccated coconut",
+"Process the dates with almond butter into a paste.|Knead in buckwheat, almonds and coconut.|Press into a tin, dehydrate for 4 hours or chill, and cut into bars.",
+{gm:"a pinch of salt|vanilla",tip:"Wrapped individually in baking paper they survive any handbag.",j:"o",h:1,d:"2 weeks"});
+r("job","Date Coconut Energy Balls","The quick energy boost for your break.",
+"1 cup dates|1 cup desiccated coconut|½ cup macadamia nuts or almonds",
+"Chop the nuts finely in a food processor.|Add dates and coconut until the mixture sticks.|Roll into balls and coat in coconut.",
+{gm:"1 tsp vanilla|a pinch of salt",j:"o",h:1,d:"2 weeks"});
+r("job","Lemon Macadamia Balls","Fresh and sunny — like a little holiday.",
+"1 cup macadamia nuts|½ cup desiccated coconut|6 dates|zest and juice of 1 organic lemon",
+"Process everything in a food processor into a mouldable mixture.|Roll into balls and chill.",
+{gm:"a pinch of salt",j:"o",h:1,d:"1 week"});
+r("job","Carrot Cake Balls","Carrot cake in snack size.",
+"1 carrot, finely grated|½ cup walnuts|½ cup dates|½ cup desiccated coconut|zest of ½ organic orange",
+"Chop the walnuts finely.|Process with the dates and orange zest.|Knead in carrot and coconut and form balls.",
+{gm:"1 tsp cinnamon|½ tsp ginger|a pinch of nutmeg",g:1,j:"k",h:1,d:"4 days"});
+r("job","Chocolate Orange Balls","Fruity, chocolatey, comforting.",
+"1 cup hazelnuts|½ cup dates|3 tbsp cacao powder|zest of 1 organic orange|2 tbsp orange juice",
+"Chop the hazelnuts finely.|Add the remaining ingredients and process.|Roll into balls and coat in cacao.",
+{gm:"a pinch of cinnamon|a hint of vanilla",j:"o",h:1,d:"1 week"});
+r("job","Mango Fruit Leather","Like fruit gums, only made from pure fruit.",
+"2 ripe mangoes|1 banana|juice of ½ lime",
+"Blend everything smooth.|Spread 3–4 mm thin on a dehydrator sheet.|Dehydrate at 42 °C for 8–12 hours.|Cut into strips with the sheet and roll up.",
+{tip:"Works just as well with strawberries, raspberries or apples.",j:"o",h:1,d:"4 weeks"});
+r("job","Dehydrated Mango Strips","Sweet, chewy, sunny.",
+"3 ripe mangoes",
+"Peel the mangoes and cut into 5 mm strips.|Dehydrate at 42 °C for 12–16 hours.",
+{j:"o",h:1,d:"several weeks"});
+r("job","Crunchy Granola Bars with Apple","Fruity, nutty and nicely crunchy.",
+"1 cup raw granola|½ cup dehydrated apple pieces|½ cup dates|2 tbsp almond butter",
+"Process the dates with almond butter into a paste.|Knead in granola and apple pieces.|Press flat, dehydrate for 8 hours and cut into bars.",
+{gm:"1 tsp cinnamon",j:"o",h:1,d:"2 weeks"});
+r("job","Crispbread Sandwich with Almond Cream Cheese","Mediterranean and crunchy.",
+"4 Italian herb crackers|3 tbsp almond cream cheese|tomato slices|cucumber|fresh basil",
+"Pack the cream cheese and vegetables separately.|At break time spread and top the crackers — that keeps them crunchy.",
+{gm:"black olives|a pinch of salt and oregano",j:"k",h:1,d:"3 days"});
+
+/* ===== Tacos & Wraps ===== */
+r("wrap","Crispy Taco Shells","Crispy outside, flexible enough to fill.",
+"2 cups golden flaxseed, ground|1 cup cornmeal, soaked overnight|1 cup water|1 tbsp chives, finely chopped",
+"Mix the flaxseed with the cornmeal.|Add water and chives and leave to swell for 10 minutes.|Spread 2 mm thin in 15 cm circles on dehydrator sheets.|Dehydrate at 42 °C for 4–5 hours, turn, another 2–3 hours.|Drape over a rack or an upside-down muffin tin and dehydrate for another 2 hours.",
+{gm:"1 tsp cumin|1 tsp paprika|½ tsp salt|1 garlic clove",tip:"Don't dry them out completely — the shells should still bend slightly."});
+r("wrap","Walnut Mushroom Mince","The savoury filling for tacos, pizza and wraps.",
+"2 cups walnuts, activated|1 cup mushrooms, finely diced|2 tbsp sun-dried tomatoes (unsalted), soaked|1 tbsp lemon juice|parsley or chives",
+"Roughly chop the walnuts in a food processor.|Chop the tomatoes very finely, dice the mushrooms finely.|Knead everything together well.|Leave to infuse for at least 30 minutes, ideally overnight.",
+{gm:"2 tbsp tamari|1 tsp cumin|1 tsp smoked paprika|½ tsp chilli flakes|1 garlic clove",g:1,tip:"Keeps for 5 days in the fridge.",j:"k",d:"5 days"});
+r("wrap","Sunflower Taco Filling","Cheaper than the walnut version and just as delicious.",
+"2 cups sunflower seeds, activated|½ cup sun-dried tomatoes (unsalted), soaked|1 small onion|fresh coriander or parsley",
+"Roughly chop seeds and tomatoes.|Finely dice the onion and fold in.|Add herbs and leave to infuse for 30 minutes.",
+{gm:"2 tbsp tamari|1 tsp cumin|1 tsp ground coriander|1 tsp paprika|½ tsp cayenne pepper",g:1,j:"k",d:"4 days"});
+r("wrap","Leaf Wraps","Large cabbage or chard leaves as a crunchy wrapper.",
+"Large cabbage or chard leaves|walnut mushroom mince|guacamole|salsa|grated red cabbage|sprouts",
+"Shave the thick stem flat.|Lay the leaf out and fill in the middle.|Fold in the sides and roll up like a spring roll.",
+{tip:"Wrap in baking paper for on the go.",j:"k",h:1,d:"1 day"});
+r("wrap","Flaxseed Tortillas","The flexible base for every wrap.",
+"2 cups golden flaxseed, ground|1 cup water|fresh herbs, finely chopped",
+"Mix everything and leave to swell for 15 minutes.|Spread thinly in 20 cm circles.|Dehydrate at 42 °C for 4 hours, turn, another 2 hours.",
+{gm:"½ tsp salt|½ tsp garlic powder",tip:"Rolled up they store well.",j:"o",d:"1 week"});
+r("wrap","Pepper Corn Filling","Colourful and fresh.",
+"2 red peppers|1 yellow pepper|½ cup corn from the cob|1 avocado|juice of 1 lime|coriander or chives",
+"Finely dice the peppers and mix with the corn.|Fold in lime and herbs.|Gently fold in the avocado.",
+{gm:"1 tsp cumin|chilli|a pinch of salt"});
+r("wrap","Courgette Wraps","Wafer-thin courgette ribbons as a fresh wrap.",
+"2 large courgettes|juice of ½ lemon",
+"Slice the courgettes thinly lengthwise.|Drizzle with lemon juice and leave for 15 minutes to soften.|Pat dry and fill.",
+{gm:"a pinch of salt to soften",tip:"Use fresh, do not dehydrate."});
+r("wrap","Coconut Curry Filling","Exotic and creamy.",
+"1 cup young coconut meat|1 carrot, grated|1 courgette in fine strips|½ cup red cabbage|2 tbsp almond butter|1 tbsp lime juice",
+"Cut the coconut meat into strips and mix with the vegetables.|Stir the almond butter with lime juice and a little water.|Mix in the sauce.",
+{gm:"1 tsp curry powder|1 tsp fresh ginger|1 tbsp tamari",g:1,j:"k",d:"2 days"});
+r("wrap","Mango Avocado Taco Filling","Sweet and fresh — a real highlight.",
+"1 ripe mango|1 avocado|½ red onion|juice of 1 lime|coriander",
+"Dice the mango and avocado.|Mix with finely diced onion.|Fold in lime and coriander.",
+{gm:"1 jalapeño|a pinch of salt"});
+
+/* ===== Dips & Spreads ===== */
+r("dip","Guacamole","The classic, creamy and fresh.",
+"3 ripe avocados|juice of 1 lime|1 small red onion|1 tomato, deseeded|coriander or chives",
+"Mash the avocados.|Mix in the lime juice straight away.|Finely dice the remaining ingredients and fold in.",
+{gm:"½ jalapeño|1 garlic clove|salt and pepper",tip:"Press cling film directly onto the surface — it keeps for a day.",j:"k",d:"1 day"});
+r("dip","Hemp Sour Cream","Tangy and creamy, goes with everything.",
+"½ cup "+HC+"|juice of ½ lemon|2 tbsp water|chives, finely chopped",
+"Stir the hemp heart cream smooth with lemon and water.|Fold in the chives.",
+{gm:"a pinch of salt",tip:"Grows a little more aromatic each day.",j:"k",d:"3 days"});
+r("dip","Raw Salsa","Sun-ripened tomatoes, fresh and fruity.",
+"4 ripe tomatoes|1 red onion|juice of 1 lime|coriander or parsley",
+"Finely dice everything and mix.|Leave to infuse in the fridge for 30 minutes.",
+{gm:"1 jalapeño|1 garlic clove|salt",j:"k",d:"2 days"});
+r("dip","Courgette Hummus","Courgette instead of chickpeas — just as creamy, but raw.",
+"1 cup courgette, peeled|½ cup tahini|juice of 1–2 lemons|1 handful wild garlic or chives|parsley to garnish",
+"Blend everything until creamy.|Adjust with lemon.|Garnish with parsley.",
+{gm:"2 garlic cloves instead of wild garlic|1 tsp cumin|salt|paprika for dusting",j:"k",d:"4 days"});
+r("dip","Red Pepper Walnut Cream","Deep red, nutty and slightly sweet.",
+"2 red peppers|1 cup walnuts|3 sun-dried tomatoes (unsalted), soaked|juice of ½ lemon|1 date",
+"Blend everything into a coarse cream.|Leave to infuse for 30 minutes.",
+{gm:"1 tsp cumin|a pinch of chilli|salt",j:"k",d:"4 days"});
+r("dip","Sunflower Seed Spread","The easy everyday spread.",
+"1 cup sunflower seeds, soaked|2 tbsp lemon juice|2–3 tbsp water|fresh herbs, preferably chives",
+"Blend the seeds with lemon and water until creamy.|Fold in the herbs.",
+{gm:"1 tsp tamari|1 garlic clove|a pinch of salt",j:"k",d:"5 days"});
+
+/* ===== Breads & Crackers ===== */
+r("brot","Buckwheat Basic Crackers","The basic recipe for countless variations.",
+"2 cups sprouted buckwheat|½ cup golden flaxseed, ground|½ cup sunflower seeds|1 carrot, grated|2 tbsp chives|½ cup water",
+"Roughly chop the buckwheat.|Mix everything and leave to swell for 15 minutes.|Spread 3 mm thin.|Dehydrate at 42 °C for 4 hours, turn, break into pieces and dehydrate for another 6–8 hours.",
+{gm:"1 tsp salt|1 tsp garlic powder",j:"o",h:1,d:"4 weeks"});
+r("brot","Italian Herb Crackers","Fragrant with the Mediterranean.",
+"2 cups sprouted buckwheat|½ cup flaxseed, ground|1 handful fresh basil|1 tbsp fresh rosemary and thyme|2 sun-dried tomatoes (unsalted)|½ cup water",
+"Roughly chop the buckwheat, finely chop herbs and tomatoes, mix everything.|Spread thinly.|Dehydrate for 10–12 hours, turning after 4 hours.",
+{gm:"2 tbsp dried Italian herbs|1 tsp salt|1 tsp garlic powder|pepper",j:"o",h:1,d:"4 weeks"});
+r("brot","Onion Crackers","Taste like fried onions — only raw.",
+"2 large onions|1 cup flaxseed, ground|½ cup sunflower seeds, ground",
+"Purée the onions.|Mix with the other ingredients.|Spread thinly and dehydrate for 10–12 hours.",
+{gm:"2 tbsp tamari|a pinch of salt",j:"o",h:1,d:"4 weeks"});
+r("brot","Tomato Basil Crackers","Summer in cracker form.",
+"1 cup fresh tomatoes|1 cup sun-dried tomatoes (unsalted), soaked|1 cup flaxseed, ground|½ cup basil",
+"Purée the tomatoes with the basil.|Mix in the flaxseed.|Spread thinly and dehydrate for 10–12 hours.",
+{gm:"1 garlic clove|1 tsp oregano|1 tsp salt",j:"o",h:1,d:"4 weeks"});
+r("brot","Carrot Crackers","Glowing orange and delicately sweet.",
+"2 large carrots, grated|1 cup flaxseed, ground|½ cup sunflower seeds|½ cup water",
+"Mix everything and leave to swell for 15 minutes.|Spread thinly and dehydrate for 10–12 hours.",
+{gm:"1 tsp turmeric for a golden colour|½ tsp ginger|1 tsp salt",j:"o",h:1,d:"4 weeks"});
+r("brot","Poppy Seed Crackers","Perfect with dips.",
+"1 cup sprouted buckwheat|½ cup flaxseed, ground|3 tbsp blue poppy seeds|½ cup water",
+"Roughly chop the buckwheat and mix everything.|Spread thinly and dehydrate for 10–12 hours.",
+{gm:"1 tsp salt|½ tsp onion powder",j:"o",h:1,d:"4 weeks"});
+r("brot","Beetroot Crackers","In beautiful pink.",
+"1 beetroot, grated|1 cup flaxseed, ground|½ cup walnuts, chopped|½ cup water",
+"Mix everything.|Spread thinly and dehydrate for 10–12 hours.",
+{gm:"1 tsp salt|½ tsp caraway",j:"o",h:1,d:"4 weeks"});
+r("brot","Raw Herb Bread","Real bread texture: crisp outside, soft inside.",
+"1 cup sprouted buckwheat|1 cup sunflower seeds, activated|¾ cup flaxseed, ground|¼ cup chia seeds|1 courgette, grated|2 tbsp fermented hemp heart cream|2 tbsp fresh rosemary and thyme|1 cup water",
+"Roughly chop the buckwheat and seeds.|Mix in courgette, flaxseed, chia, hemp heart cream and herbs.|Add water and leave to swell for 30 minutes.|Shape into a 2 cm thick loaf and pre-cut into slices.|Dehydrate at 42 °C for 12 hours, turn, another 10–12 hours.",
+{gm:"1 tsp salt",tip:"The base for every work sandwich.",j:"o",h:1,d:"1 week"});
+r("brot","Almond Flaxseed Crackers","Fine, delicate and nutty.",
+"1 cup activated almonds, ground|1 cup golden flaxseed, ground|1 tsp fresh rosemary|½ cup water",
+"Mix everything and leave to swell.|Spread thinly and dehydrate for 10–12 hours.",
+{gm:"½ tsp salt",j:"o",h:1,d:"4 weeks"});
+r("brot","Crispy Grissini","Great as a snack or with soups.",
+"1 cup sprouted buckwheat|½ cup flaxseed, ground|2 tbsp fermented hemp heart cream|1 tsp fresh rosemary|½ cup water",
+"Work into a firm dough.|Roll into 1 cm thick sticks.|Dehydrate for 12–14 hours.",
+{gm:"1 tsp salt|½ tsp garlic powder",j:"o",h:1,d:"4 weeks"});
+r("brot","Spinach Crackers","Intensely green and full of power.",
+"2 cups spinach|1 cup flaxseed, ground|½ cup sunflower seeds|1 handful wild garlic or chives|juice of ½ lemon",
+"Purée the spinach with the wild garlic and lemon.|Mix in flaxseed and seeds.|Spread thinly and dehydrate for 10–12 hours.",
+{gm:"1 garlic clove|1 tsp salt",j:"o",h:1,d:"4 weeks"});
+r("brot","Sesame Crackers","Crunchy and nutty.",
+"1 cup sesame seeds, white and black|½ cup flaxseed, ground|½ cup water",
+"Briefly crack the sesame in a blender.|Mix with flaxseed and water.|Spread very thinly and dehydrate for 8–10 hours.",
+{gm:"1 tsp salt",j:"o",h:1,d:"4 weeks"});
+r("brot","Walnut Rosemary Crackers","Mediterranean and aromatic.",
+"1 cup walnuts, ground|1 cup flaxseed, ground|2 tbsp fresh rosemary|2 sun-dried tomatoes (unsalted), chopped|½ cup water",
+"Mix everything.|Spread thinly and dehydrate for 10–12 hours.",
+{gm:"½ cup black olives, chopped|a pinch of salt",j:"o",h:1,d:"4 weeks"});
+r("brot","Coconut Crackers","With sweet spreads or on their own.",
+"1 cup desiccated coconut|1 cup flaxseed, ground|2 tbsp date paste|½ cup coconut milk from young coconut meat",
+"Mix everything and leave to swell for 15 minutes.|Spread thinly and dehydrate for 10 hours.",
+{gm:"½ tsp cinnamon|a pinch of salt",j:"o",h:1,d:"3 weeks"});
+r("brot","Pizza Crackers","Taste like pizza chips.",
+"1 cup flaxseed, ground|½ cup sun-dried tomatoes (unsalted), puréed|1 handful fresh basil|½ cup water",
+"Mix everything.|Spread thinly and dehydrate for 10–12 hours.",
+{gm:"1 tsp oregano|½ tsp garlic powder|1 tsp salt",g:1,j:"o",h:1,d:"4 weeks"});
+
+/* ===== Pizza, Quiche & Mains ===== */
+r("haupt","Raw Quiche with Spinach and Mushrooms","Nutty base, golden filling — a feast that still shines in your lunch box the next day.",
+"Base: 1 cup walnuts|½ cup sunflower seeds, activated|½ cup golden flaxseed, ground|1 tsp fresh thyme|2–3 tbsp water|Filling: 1½ cups "+HC+"|1 small courgette|juice of ½ lemon|3 tbsp chives|Topping: 1 cup mushrooms in slices, marinated in lemon juice for 30 minutes|2 handfuls baby spinach, finely sliced|3 spring onions|cherry tomatoes for topping",
+"For the base, pulse walnuts and seeds in a food processor until crumbly, add flaxseed, thyme and water until the mixture holds together.|Press into a tart tin (about 22 cm) and form a rim. Pre-dehydrate at 42 °C for 4 hours.|For the filling, blend hemp heart cream, courgette and lemon until silky and fold in the chives.|Drain the mushrooms and fold them into the cream with spinach and spring onions.|Spread the filling over the base and press in halved cherry tomatoes.|Dehydrate at 42 °C for another 6–8 hours until the surface is firm and lightly golden.|Chill for 1 hour before cutting.",
+{gm:"½ tsp kala namak (black salt) for the typical quiche flavour|½ tsp turmeric for the golden colour|a pinch of nutmeg|1 garlic clove|1 tbsp tamari for the mushrooms",tip:"Lukewarm straight from the dehydrator it is a poem. It keeps for 4 days in the fridge — a slice in the lunch box makes any break festive.",j:"k",d:"4 days"});
+r("haupt","Raw Pizza Base","Easy to prepare ahead and freeze.",
+"1 cup sprouted buckwheat|½ cup flaxseed, ground|½ cup sunflower seeds|1 courgette, grated and squeezed|1 handful fresh basil|½ cup water",
+"Chop the buckwheat and seeds.|Mix in courgette, basil, flaxseed and water.|Spread into a 25 cm round on a dehydrator sheet.|Dehydrate for 4 hours, turn, another 4–6 hours.",
+{gm:"1 tsp salt|1 tsp oregano",j:"o",d:"1 week"});
+r("haupt","Marinara Sauce","Best fresh, but keeps for 4 days.",
+"2 cups fresh tomatoes|½ cup sun-dried tomatoes (unsalted), soaked|1 handful fresh basil|1 date",
+"Blend everything — a little texture may remain.",
+{gm:"1 garlic clove|1 tsp oregano|salt",j:"k",d:"4 days"});
+r("haupt","Macadamia Cream Cheese","Mild, buttery and spreadable — the pizza cheese of the living kitchen.",
+"1 cup macadamia nuts, soaked for 4 hours|3–4 tbsp water|1 tbsp lemon juice",
+"Blend the macadamias with water and lemon until very creamy.|Fill into a clean jar and, like the hemp heart cream, leave at room temperature for about one day.|Refrigerate — it firms up.",
+{gm:"a pinch of salt|1 garlic clove",j:"k",d:"4 days"});
+r("haupt","Classic Raw Pizza","The queen of the raw kitchen.",
+"1 pizza base|½ cup marinara|macadamia cream cheese|tomatoes|mushrooms|basil|rocket",
+"Spread the base with marinara.|Top with cream cheese, tomatoes and mushrooms.|Finish with basil and rocket.",
+{gm:"black olives|dried oregano"});
+r("haupt","Courgette Noodles with Avocado Pesto","Creamy, green and lightning fast.",
+"3 courgettes|2 avocados|1 cup basil|½ cup pine nuts|1 handful wild garlic or chives|juice of 1 lemon|cherry tomatoes",
+"Spiralise the courgettes.|Blend avocado, basil, pine nuts, wild garlic and lemon until creamy.|Toss with the noodles and garnish with tomatoes.",
+{gm:"2 garlic cloves|salt|pepper",j:"k",d:"1 day"});
+r("haupt","Carrot Noodles with Tahini Sauce","Sweet, nutty and sunny orange.",
+"4 large carrots|3 tbsp tahini|2 tbsp lemon juice|2–3 tbsp water|1 date|sesame seeds",
+"Turn the carrots into noodles.|Blend tahini, lemon, water and date until creamy.|Toss and sprinkle with sesame.",
+{gm:"1 garlic clove|1 tsp tamari|½ tsp fresh ginger",j:"k",d:"2 days"});
+r("haupt","Stuffed Peppers","Colourful and savoury.",
+"4 large peppers|1 cup walnut mushroom mince|1 tomato|½ avocado|coriander or parsley|hemp sour cream",
+"Halve and deseed the peppers.|Mix the mince with diced tomato and herbs and fill.|Top with avocado and sour cream.",
+{j:"k",h:1,d:"2 days"});
+r("haupt","Raw Lasagne","Layer by layer a delight — even better after a night in the fridge.",
+"2 large courgettes|marinara sauce|Ricotta: 1 cup "+HC+", 2 tbsp lemon juice, 2 tbsp chives|2 cups spinach, marinated with a squeeze of lemon|fresh basil",
+"Slice the courgettes thinly lengthwise.|Stir the ricotta ingredients together.|Layer: courgette, marinara, ricotta, spinach — repeat.|Top with basil and leave to rest for at least 1 hour.",
+{gm:"salt to soften the courgettes|1 garlic clove in the ricotta|oregano in the marinara",tip:"Cut into portions it fits perfectly into a lunch box.",j:"k",d:"3 days"});
+r("haupt","Cauliflower Rice","A versatile base instead of rice.",
+"1 cauliflower|a squeeze of lemon|fresh herbs",
+"Pulse the florets in a food processor until rice-like.|Mix with lemon and herbs.",
+{gm:"a pinch of salt|½ tsp turmeric for golden rice",j:"k",d:"3 days"});
+r("haupt","Vegetable Curry on Cauliflower Rice","Creamy and warming.",
+"cauliflower rice|1 pepper|1 carrot|1 courgette|½ cup fresh peas|Sauce: ½ cup "+HC+", 1 tomato, ½ cup young coconut meat, ½ cup water|coriander",
+"Blend the sauce until creamy.|Chop the vegetables and mix with the sauce.|Serve on cauliflower rice and sprinkle with coriander.",
+{gm:"1 tbsp curry powder|1 tsp turmeric|1 tsp fresh ginger|1 garlic clove|salt",g:1,j:"k",d:"2 days"});
+r("haupt","Mushroom Stroganoff","Velvety and savoury.",
+"2 cups mushrooms, marinated in lemon juice|Sauce: ½ cup "+HC+", ½ red pepper, 3 tbsp water|courgette noodles|parsley",
+"Marinate the mushrooms for 30 minutes.|Blend the sauce until creamy and combine.|Serve on courgette noodles.",
+{gm:"2 tbsp tamari for the mushrooms|1 tsp paprika|1 garlic clove",g:1});
+r("haupt","Sushi Rolls","A little celebration.",
+"nori sheets|cauliflower rice with 1 tbsp lemon juice and 1 tbsp "+HC+"|avocado, cucumber, carrot, pepper in strips",
+"Place the nori on the mat and spread thinly with rice.|Lay the vegetables in the middle.|Roll up tightly and slice.",
+{gm:"tamari for dipping|fresh ginger|wasabi",j:"k",h:1,d:"1 day"});
+r("haupt","Mediterranean Buddha Bowl","All the good things in one bowl.",
+"cauliflower rice|raw falafel|courgette hummus|tabbouleh|cucumber|tomatoes|tahini with lemon",
+"Put the rice in the bowl as a base.|Arrange the components around it.|Drizzle with tahini.",
+{gm:"black olives",j:"k",d:"2 days"});
+r("haupt","Raw Falafel","Crispy outside, juicy inside.",
+"1 cup sunflower seeds, activated|½ cup walnuts|½ cup parsley|½ cup coriander|1 handful wild garlic or chives|juice of ½ lemon",
+"Process everything into a mouldable mixture.|Form balls.|Dehydrate for 6–8 hours.",
+{gm:"1 tsp cumin|1 tsp ground coriander|2 garlic cloves|salt",g:1,j:"k",h:1,d:"5 days"});
+r("haupt","Pad Thai","Nutty, fresh and exotic.",
+"courgette noodles from 2 courgettes|1 carrot|1 pepper|½ cup red cabbage|Sauce: 3 tbsp almond butter, 1 tbsp lime juice, 1 date, 2–3 tbsp water|coriander and chopped almonds",
+"Blend the sauce until creamy.|Toss the vegetables and noodles.|Pour over the sauce and top.",
+{gm:"2 tbsp tamari|1 tsp fresh ginger|1 garlic clove|chilli",g:1,j:"k",d:"1 day"});
+r("haupt","Raw Burger Patties","Served in a large lettuce leaf as a burger.",
+"1 cup sunflower seeds, activated|½ cup walnuts|1 carrot, grated|½ onion|fresh parsley",
+"Roughly chop the seeds and nuts.|Mix with vegetables and herbs and shape patties.|Dehydrate for 4–6 hours per side.",
+{gm:"1 tbsp tamari|1 tsp paprika|½ tsp cumin|salt",j:"k",h:1,d:"4 days"});
+r("haupt","Mushroom Walnut Bolognese","Hearty and aromatic.",
+"2 cups mushrooms|1 cup walnuts|1 cup sun-dried tomatoes (unsalted), soaked|2 tomatoes|1 carrot|1 celery stick|fresh basil",
+"Purée the tomatoes.|Roughly chop mushrooms, walnuts, carrot and celery.|Mix everything and leave to infuse for 30 minutes.|Serve on courgette noodles.",
+{gm:"2 garlic cloves|oregano|salt",j:"k",d:"3 days"});
+r("haupt","Spring Rolls in Lettuce Leaves","Fresh, crunchy, fragrant with herbs.",
+"large lettuce leaves|carrot, cucumber, avocado, mango in strips|mint|coriander|Dip: 2 tbsp almond butter, 1 tbsp lime juice, 2 tbsp water",
+"Lay vegetables and herbs on the leaf.|Fold in the sides and roll tightly.|Serve with the dip.",
+{gm:"tamari and fresh ginger in the dip",j:"k",h:1,d:"1 day"});
+
+/* ===== Soups ===== */
+r("suppe","Gazpacho","The Spanish summer classic.",
+"4 ripe tomatoes|1 cucumber|1 red pepper|1 small red onion|juice of ½ lemon|2 tbsp "+HC+"|basil",
+"Roughly chop the vegetables and blend, not too smooth.|Blend in lemon and hemp heart cream and chill for 2 hours.|Serve with basil.",
+{gm:"2 garlic cloves|salt and pepper",tip:"In a thermos flask it becomes a soup to drink during your break.",j:"k",d:"2 days"});
+r("suppe","Carrot Avocado Soup","Velvety and golden.",
+"4 large carrots|1 avocado|2 cups water|juice of ½ orange|chives|pumpkin seeds",
+"Blend everything except chives and seeds until creamy.|Serve cold or lukewarm (below 42 °C).|Garnish with chives and pumpkin seeds.",
+{gm:"2 tsp fresh ginger|1 tsp turmeric|salt",j:"k",d:"1 day"});
+r("suppe","Thai Coconut Soup","Even more aromatic slightly warmed.",
+"1 cup coconut milk from young coconut meat|1 cup water|1 carrot|1 courgette|½ cup mushrooms|juice of 1 lime|coriander",
+"Blend the coconut milk with water and lime.|Finely slice the vegetables and add.|Garnish with coriander.",
+{gm:"2 tbsp tamari|1 tsp fresh ginger|1 tsp raw curry paste|chilli",g:1});
+
+/* ===== Salads ===== */
+r("salat","Tabbouleh","Herb-fresh and lemony.",
+"1 cup cauliflower rice|1 cup parsley|½ cup mint|2 tomatoes|1 cucumber|3 spring onions|juice of 1 lemon|2 tbsp "+HC,
+"Finely chop herbs and vegetables.|Stir the lemon with the hemp heart cream and mix everything.|Leave to infuse for 30 minutes.",
+{gm:"salt|pepper",j:"k",d:"3 days"});
+r("salat","Caesar Salad","Creamy, crunchy, fresh.",
+"1 romaine lettuce|Dressing: ½ cup "+HC+", 2 tbsp lemon juice, 3 tbsp water, 2 tbsp chives|Almond crumbs: almonds coarsely ground in a blender",
+"Stir the dressing smooth.|Toss the lettuce with it.|Sprinkle with almond crumbs.",
+{gm:"1 garlic clove in the dressing|salt and pepper|a pinch of salt in the almond crumbs"});
+r("salat","Thai Salad with Mango","Crunchy cabbage with tropical sweetness.",
+"4 cups white and red cabbage|1 mango|1 pepper|½ cup coriander|¼ cup mint|Dressing: 2 tbsp almond butter, 2 tbsp lime juice, 1 date, 2 tbsp water|chopped almonds",
+"Finely slice the cabbage, mix with mango, pepper and herbs.|Blend the dressing and fold in.|Top with almonds.",
+{gm:"1 tbsp tamari|1 tsp fresh ginger|chilli",tip:"Cabbage salads only get better in the box over time.",j:"k",d:"3 days"});
+r("salat","Spinach Strawberry Salad","Summery sweet and nutty.",
+"4 cups baby spinach|1 cup strawberries|½ cup walnuts|¼ red onion|Dressing: 4 strawberries, 2 tbsp "+HC+", 1 tbsp lemon juice",
+"Put salad, strawberries, walnuts and onion in a bowl.|Blend the dressing ingredients and fold in just before serving.",
+{gm:"freshly ground pepper"});
+r("salat","Cucumber Salad with Dill","Creamy and refreshing.",
+"2 cucumbers|½ red onion|3 tbsp dill|3 tbsp hemp sour cream|1 tbsp lemon juice",
+"Thinly slice the cucumbers and onion.|Stir the sour cream with lemon and dill and fold in.",
+{gm:"salt and pepper"});
+r("salat","Avocado Tomato Salad","Simple and perfect.",
+"2 avocados|4 tomatoes|½ red onion|coriander or basil|1 tbsp lime juice",
+"Dice the avocado and tomatoes and mix.|Fold in onion and herbs.|Drizzle with lime juice.",
+{gm:"salt and pepper"});
+r("salat","Coleslaw","Creamy and crunchy, ideal to prepare ahead.",
+"3 cups white cabbage|1 carrot|2 spring onions|Dressing: ½ cup "+HC+", 2 tbsp lemon juice, 1 date, 2 tbsp water",
+"Finely slice the vegetables.|Blend the dressing until creamy and mix in.|Leave to infuse for 30 minutes.",
+{gm:"salt|pepper|caraway",j:"k",d:"4 days"});
+
+/* ===== Snacks, Cookies & Bars ===== */
+r("snack","Chocolate Date Cookies","Crisp outside, soft inside — like real cookies.",
+"1 cup activated almonds|1 cup Medjool dates|3 tbsp cacao powder|optional: cacao nibs",
+"Grind the almonds finely, process in the dates.|Mix in the cacao.|Shape cookies and dehydrate for 8–10 hours.",
+{gm:"a pinch of salt",j:"o",h:1,d:"2 weeks"});
+r("snack","Coconut Macaroons","Tender and fragrant.",
+"2 cups desiccated coconut|½ cup date paste|2 tbsp almond butter",
+"Mix everything and form small mounds.|Dehydrate for 10–12 hours.",
+{gm:"1 tsp vanilla|a pinch of salt",j:"o",h:1,d:"2 weeks"});
+r("snack","Buckwheat Raisin Cookies","Like oat cookies, only alive.",
+"1 cup sprouted buckwheat|½ cup raisins|½ cup walnuts|3 tbsp date paste",
+"Roughly chop the buckwheat and mix everything.|Shape flat cookies and dehydrate for 8–10 hours.",
+{gm:"1 tsp cinnamon|½ tsp vanilla",j:"o",h:1,d:"2 weeks"});
+r("snack","Almond Butter Cookies","With a fork pattern like in the old days.",
+"1 cup almond butter|½ cup date paste|½ cup sprouted buckwheat, ground",
+"Stir the almond butter with the date paste until creamy.|Mix in the buckwheat flour.|Shape cookies, press with a fork and dehydrate for 8–10 hours.",
+{gm:"1 tsp vanilla|a pinch of salt",j:"o",h:1,d:"2 weeks"});
+r("snack","Lemon Poppy Seed Cookies","Fresh and delicate.",
+"1 cup almonds, ground|3 tbsp blue poppy seeds|3 tbsp date paste|zest of 1 organic lemon|1 tbsp lemon juice|1 tbsp almond butter",
+"Knead everything together.|Shape cookies and dehydrate for 8–10 hours.",
+{j:"o",h:1,d:"2 weeks"});
+r("snack","Banana Walnut Cookies","Just a few ingredients — super easy.",
+"2 ripe bananas|1 cup walnuts|½ cup desiccated coconut|optional: raisins",
+"Mash the bananas and mix everything.|Form small mounds and dehydrate for 10–12 hours.",
+{gm:"½ tsp cinnamon",j:"o",h:1,d:"1 week"});
+r("snack","Raw Brownies","No dehydrating needed — ready to enjoy straight away.",
+"1 cup walnuts|1 cup Medjool dates|4 tbsp cacao powder|optional: cacao nibs",
+"Chop the walnuts finely, process in the dates.|Mix in the cacao.|Press 2 cm thick into a tin, chill for 1 hour and cut into squares.",
+{gm:"a pinch of sea salt|vanilla",tip:"A brownie in the lunch box is the best promise for the afternoon break.",j:"o",h:1,d:"1 week"});
+r("snack","Buckwheat Energy Bars","Perfect for on the go.",
+"1 cup sprouted, dehydrated buckwheat|½ cup dates|½ cup almonds|2 tbsp cacao powder|1 tbsp almond butter",
+"Roughly chop the almonds and buckwheat.|Process dates, cacao and almond butter until creamy.|Combine everything, press into bars and chill.",
+{gm:"a pinch of salt",j:"o",h:1,d:"2 weeks"});
+r("snack","Cinnamon Rolls","A touch of bakery.",
+"Dough: 1 cup sprouted buckwheat, ½ cup dates, 1 tbsp almond butter|Filling: 3 tbsp almond butter, 2 tbsp date paste, raisins",
+"Process the dough and roll out between baking paper.|Spread with the filling, roll up and cut into slices.|Dehydrate for 4–6 hours.",
+{gm:"1–2 tsp cinnamon in the filling|vanilla in the dough",g:1,j:"o",h:1,d:"1 week"});
+r("snack","Almond Date Bars","Pure and honest.",
+"1 cup activated almonds|1 cup Medjool dates|½ cup desiccated coconut",
+"Roughly chop the almonds, purée the dates.|Knead everything together, press into a tin, chill and cut.",
+{gm:"1 tsp vanilla|a pinch of salt",j:"o",h:1,d:"2 weeks"});
+r("snack","Hemp Cacao Balls","Small, powerful, delicious.",
+"½ cup dates|½ cup almonds|3 tbsp hemp hearts|2 tbsp chia seeds|2 tbsp cacao powder",
+"Process everything in a food processor.|Form balls and roll in coconut, cacao or hemp hearts.",
+{gm:"vanilla|a pinch of salt",j:"o",h:1,d:"2 weeks"});
+r("snack","Apple Raisin Cookies","Autumnal and fruity.",
+"1 cup dehydrated apple rings, soaked|1 cup activated almonds|½ cup raisins|1 tbsp almond butter",
+"Grind the almonds, chop the apples and raisins.|Knead everything, shape cookies and dehydrate for 8–10 hours.",
+{gm:"1 tsp cinnamon|¼ tsp nutmeg",j:"o",h:1,d:"2 weeks"});
+r("snack","Hazelnut Chocolate Truffles","Like pralines — only raw.",
+"1 cup hazelnuts, activated|½ cup dates|3 tbsp cacao powder|1 tbsp hazelnut butter|cacao for rolling",
+"Chop the hazelnuts finely.|Process in the remaining ingredients.|Form balls and roll in cacao.",
+{gm:"a pinch of salt",j:"o",h:1,d:"2 weeks"});
+r("snack","Ginger Cookies","Festive and spicy.",
+"1 cup almonds, ground|½ cup dates|zest of ½ organic orange",
+"Process everything.|Shape cookies and dehydrate for 8–10 hours.",
+{gm:"2 tsp fresh ginger|1 tsp cinnamon|½ tsp nutmeg|¼ tsp cloves",g:1,j:"o",h:1,d:"2 weeks"});
+r("snack","Coconut Date Confections","Little moments of happiness.",
+"1 cup desiccated coconut|½ cup dates|1 tbsp almond butter|cacao powder for dusting",
+"Purée the dates and knead with coconut and almond butter.|Shape pieces, dust with cacao and chill.",
+{gm:"1 tsp vanilla|a pinch of salt",j:"o",h:1,d:"2 weeks"});
+
+/* ===== Cakes & Desserts ===== */
+r("torte","Chocolate Avocado Mousse","So creamy that nobody tastes the avocado.",
+"2 ripe avocados|4 tbsp cacao powder|4 Medjool dates|berries",
+"Purée the dates with a little water.|Blend everything until creamy and chill for 1 hour.|Serve in a glass with berries.",
+{gm:"1 tsp vanilla|a pinch of salt",tip:"In a screw-top jar also a wonderful work dessert.",j:"k",d:"2 days"});
+r("torte","Banana Ice Cream (Nice Cream)","The simplest ice cream in the world.",
+"4 frozen bananas|optional: 2 tbsp cacao, 1 cup frozen berries or 2 tbsp almond butter",
+"Blend the bananas until creamy.|Vary as you like and enjoy immediately.",
+{gm:"vanilla|a pinch of cinnamon"});
+r("torte","Cake Base (Basic Recipe)","The base for all cakes.",
+"1 cup walnuts or almonds|1 cup Medjool dates|2 tbsp cacao powder (optional)",
+"Chop the nuts finely.|Process in the dates until the mixture holds together.|Press into a 20–22 cm springform tin and chill.",
+{gm:"a pinch of salt"});
+r("torte","Berry Macadamia Cake","Like cheesecake — completely raw.",
+"cake base without cacao|2 cups macadamia nuts, soaked|½ cup coconut milk from young coconut meat|¼ cup date paste|2 cups mixed berries|juice of ½ lemon|fresh berries",
+"Blend macadamias, coconut milk, date paste and lemon until creamy, then blend in the berries.|Pour onto the base and freeze for at least 4 hours.|Take out 30 minutes before serving and decorate.",
+{gm:"1 tsp vanilla"});
+r("torte","Chocolate Cake","Deep, dark, seductive.",
+"cake base with cacao|2 cups macadamia nuts, soaked|½ cup coconut milk from young coconut meat|½ cup date paste|4 tbsp cacao|cacao nibs and raspberries",
+"Blend the filling until creamy.|Pour onto the base and freeze for 4 hours.|Decorate with nibs and raspberries.",
+{gm:"1 tsp vanilla|a pinch of salt"});
+r("torte","Mango Coconut Cake","Tropical and refreshing.",
+"Base: 1 cup macadamia, 1 cup desiccated coconut, ½ cup dates|2 mangoes|1 cup young coconut meat|2 tbsp date paste|juice of ½ lime",
+"Press the base into the tin.|Blend the filling until creamy and pour on.|Freeze for 4 hours and decorate with mango.",
+{gm:"vanilla"});
+r("torte","Tiramisu","An Italian dream, alive.",
+"almond date bars in pieces|Soak: 4 dates and 1 tbsp cacao blended with 1 cup water|Cream: 2 cups macadamia nuts, soaked, ½ cup coconut milk from young coconut meat, 3 tbsp date paste|cacao powder",
+"Briefly dip the bar pieces into the soak.|Blend the cream until creamy.|Layer and chill for 4 hours.|Dust generously with cacao.",
+{gm:"2 tsp vanilla in the cream"});
+r("torte","Banana Caramel Cake","Caramel-sweet with melting banana.",
+"cake base|Caramel: 1 cup Medjool dates, 3 tbsp almond butter, 3 tbsp water|3 bananas|cacao powder",
+"Blend the caramel until creamy and spread on the base.|Lay banana slices on top and dust with cacao.|Chill for 2 hours.",
+{gm:"1 tsp vanilla|a pinch of salt in the caramel"});
+r("torte","Raw Apple Pie","With crunchy crumble.",
+"Base: 1 cup almonds, 1 cup dates|4 apples|2 tbsp lemon juice|2 tbsp date paste|Crumble: ½ cup almonds, 2 dates, 1 tbsp almond butter",
+"Press the base into the tin.|Thinly slice the apples and marinate with lemon and date paste.|Fan them out on top, sprinkle with crumble.|Leave to rest for 2 hours.",
+{gm:"1 tsp cinnamon|½ tsp nutmeg|¼ tsp ginger"});
+r("torte","Chia Pudding","Swollen overnight, crowned in the morning.",
+"½ cup chia seeds|2 cups almond or hemp milk|2 tbsp date paste|fruit, nuts, coconut",
+"Mix everything and stir several times.|Leave to swell overnight.|Serve with toppings.",
+{gm:"1 tsp vanilla",j:"k",d:"3 days"});
+r("torte","Coconut Cream with Berries","Delicate and silky.",
+"1 cup young coconut meat|½ cup macadamia nuts, soaked|3 tbsp date paste|berries",
+"Blend coconut meat, macadamias and date paste until very creamy.|Fill into glasses and chill for 2 hours.|Serve with berries.",
+{gm:"1 tsp vanilla",j:"k",d:"2 days"});
+r("torte","Raspberry Tartlets","Little pink works of art.",
+"Base per tartlet: ½ cup almonds, ¼ cup coconut, 3 dates|1 cup macadamia nuts, soaked|½ cup raspberries|2 tbsp date paste",
+"Press the bases into moulds.|Blend the filling and divide.|Freeze for 2 hours and garnish with raspberries.",
+{j:"k",h:1,d:"3 days"});
+r("torte","Lemon Tart","Refreshingly sweet and sour.",
+"Base: 1 cup almonds, ½ cup coconut, ½ cup dates|1 cup macadamia nuts, soaked|½ cup lemon juice|zest of 2 organic lemons|¼ cup date paste|½ cup young coconut meat",
+"Press the base into the tart tin.|Blend the filling until creamy and pour on.|Freeze for 4 hours.",
+{gm:"¼ tsp turmeric for a sunny yellow colour"});
+r("torte","Strawberry Cake","Pink, fruity, festive.",
+"cake base|2 cups macadamia nuts, soaked|1 cup strawberries|3 tbsp date paste|½ cup young coconut meat|strawberry halves",
+"Blend the filling until creamy and pour onto the base.|Freeze for 4 hours and decorate.",
+{gm:"1 tsp vanilla"});
+r("torte","Chocolate Squares","Chocolatey and melt-in-the-mouth — without cacao butter.",
+"½ cup almond butter|4 tbsp cacao powder|4 tbsp date paste|optional: nuts, dried fruit",
+"Stir everything smooth.|Spread about 1 cm thick in a tin lined with baking paper and top as you like.|Freeze for at least 2 hours and break into pieces.",
+{gm:"vanilla|sea salt flakes on top",tip:"Crunchiest straight from the freezer."});
+
+/* ===== Cheese & Ferments ===== */
+r("kaese","Herb Cream Cheese","The spread for your dehydrated bread.",
+"1 cup "+HC+"|3 tbsp chives, dill and parsley|a squeeze of lemon",
+"Finely chop the herbs.|Stir into the hemp heart cream with the lemon.",
+{gm:"1 garlic clove or wild garlic|a pinch of salt|½ tsp onion powder",j:"k",d:"3 days"});
+r("kaese","Almond Cream Cheese","White, mild and sliceable — wonderful with tomatoes.",
+"1 cup blanched almonds, soaked for 8 hours|¼ cup water|2 tbsp lemon juice",
+"Blend the almonds with water and lemon until very creamy.|Fill into a clean jar and leave to ferment at room temperature for one day.|Press into a small mould and chill for 4 hours.",
+{gm:"1 tsp salt for a feta character|½ tsp oregano",j:"k",d:"4 days"});
+r("kaese","Macadamia Cheese Round","Creamy inside, with a delicate rind outside.",
+"1 cup macadamia nuts, soaked|3 tbsp water|1 tbsp lemon juice|fresh herbs for coating",
+"Blend the macadamias with water and lemon until creamy.|Leave to ferment in a clean jar at room temperature for 1–2 days.|Shape into a round, coat in herbs and dehydrate at 42 °C for 6 hours until a rind forms.|Leave to mature further in the fridge.",
+{gm:"a pinch of salt|freshly ground pepper",j:"k",d:"1 week"});
+r("kaese","Sauerkraut","Full of living cultures — salt-free if you wish.",
+"1 head white cabbage|1 cup freshly pressed celery juice",
+"Finely shred the cabbage and knead vigorously until it releases juice.|Press firmly into a clip-top jar and top up with celery juice until everything is covered.|Weigh down and ferment for 5–7 days, opening briefly every day.|Store in the fridge.",
+{gm:"classic: knead in 1 tbsp salt instead of celery juice|caraway|juniper",tip:"With creamy hemp sauce it becomes a filling packed snack.",j:"k",d:"several weeks"});
+r("kaese","Simple Kimchi","Tangy and invigorating.",
+"1 Chinese cabbage|1 carrot|1 bunch spring onions|1 pear|1 cup freshly pressed celery juice",
+"Cut the cabbage into pieces and knead vigorously.|Cut the carrot into strips, the spring onions into rings, purée the pear.|Combine everything, press firmly into a jar and cover with celery juice.|Ferment for 3–5 days, then refrigerate.",
+{gm:"2 tbsp salt to salt the cabbage|3 garlic cloves|2 tsp ginger|2 tbsp gochugaru (Korean chilli)",g:1,j:"k",d:"several weeks"});
+
+/* ===== Breakfast & Smoothies ===== */
+r("morgen","Hemp Milk","Blended in a minute, no straining needed.",
+"3 tbsp hemp hearts|1 cup water|1 date",
+"Blend everything for 30 seconds.|Enjoy straight away or keep in the fridge.",
+{gm:"vanilla",tip:"For almond milk, blend 1 cup soaked almonds with 3 cups water and strain through a cloth.",j:"k",d:"2 days"});
+r("morgen","Buckwheat Porridge","Creamy with bite.",
+"1 cup sprouted buckwheat|1 banana|½ cup hemp milk|berries, nuts, seeds",
+"Blend coarsely so some texture remains.|Serve with toppings.",
+{gm:"1 tsp cinnamon",j:"k",d:"1 day"});
+r("morgen","Overnight Chia","The breakfast that makes itself overnight.",
+"3 tbsp chia seeds|1 cup hemp or almond milk|1 tbsp date paste|toppings",
+"Mix everything.|Leave to swell overnight.|Add toppings in the morning.",
+{gm:"½ tsp vanilla",tip:"Made straight in a screw-top jar, it goes into your bag without transferring.",j:"k",d:"2 days"});
+r("morgen","Green Power Smoothie","Green strength in a glass.",
+"2 handfuls spinach|1 frozen banana|1 cup hemp milk|1 tbsp almond butter|1 date",
+"Blend everything until creamy.",
+{tip:"In a thermos flask it stays fresh until lunchtime.",j:"k",d:"1 day"});
+r("morgen","Berry Smoothie Bowl","Colourful as a summer morning.",
+"1 cup frozen berries|1 frozen banana|½ cup hemp milk|berries, granola, coconut, chia",
+"Blend thick.|Pour into a bowl and decorate.");
+r("morgen","Tropical Smoothie","A holiday in a glass.",
+"1 cup frozen mango|½ cup pineapple|1 banana|1 cup coconut milk from young coconut meat",
+"Blend everything until creamy and enjoy immediately.",
+{gm:"1 tsp turmeric|a piece of fresh ginger"});
+r("morgen","Raw Granola","Gets even crunchier as it cools.",
+"1 cup sprouted buckwheat|½ cup desiccated coconut|½ cup almonds|¼ cup pumpkin seeds|¼ cup sunflower seeds|3 tbsp date paste|1 tbsp almond butter",
+"Mix the dry ingredients.|Stir date paste and almond butter together and mix in.|Dehydrate for 12–16 hours, turning several times.",
+{gm:"1 tsp cinnamon|½ tsp vanilla|a pinch of salt",j:"o",h:1,d:"4 weeks"});
+
+/* ---------- Baukasten ---------- */
+const B1=["Raw herb bread","Onion crackers","Flaxseed tortilla","Italian herb crackers","Chard or cabbage leaf","Nori sheet","Veggie sticks","Courgette noodles in a jar"];
+const B2=["Sunflower seed spread","Courgette hummus","Herb cream cheese","Guacamole","Hemp heart cream with chives","Walnut mushroom mince","Almond cream cheese with tomato","Sauerkraut with hemp sauce","Kimchi with avocado"];
+const B3=["Raw brownie","Dehydrated banana sticks","Date coconut energy balls","Crunchy dehydrated almonds","Crispy apple chips","Stuffed dates","Mango fruit leather","Kale chips"];
+const fill=(id,a)=>document.getElementById(id).innerHTML=a.map(x=>"<li>"+x+"</li>").join("");
+fill("b1",B1);fill("b2",B2);fill("b3",B3);
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+document.getElementById("comboBtn").onclick=()=>{
+  document.getElementById("combo").innerHTML="Tomorrow treat yourself to <em>"+pick(B1)+"</em> with <em>"+pick(B2)+"</em> — and for the sweet break <em>"+pick(B3)+"</em>. ✦";
+};
+
+/* ---------- Rendern ---------- */
+let cat="all", sub="all", q="";
+const chips=document.getElementById("chips");
+chips.innerHTML='<button class="chip on" data-cat="all" type="button">All</button>'+
+  CATS.map(([k,v])=>'<button class="chip'+(k==="job"?" star":"")+'" data-cat="'+k+'" type="button">'+v+'</button>').join("");
+chips.onclick=e=>{const b=e.target.closest("[data-cat]");if(b)setCat(b.dataset.cat);};
+document.getElementById("subchips").onclick=e=>{const b=e.target.closest("[data-sub]");if(!b)return;sub=b.dataset.sub;
+  document.querySelectorAll("[data-sub]").forEach(x=>x.classList.toggle("on",x===b));render();};
+document.getElementById("search").oninput=e=>{q=e.target.value.toLowerCase().trim();render();};
+
+function setCat(c){cat=c;sub="all";
+  document.querySelectorAll("[data-cat]").forEach(x=>x.classList.toggle("on",x.dataset.cat===c));
+  document.querySelectorAll("[data-sub]").forEach(x=>x.classList.toggle("on",x.dataset.sub==="all"));
+  document.getElementById("subchips").classList.toggle("show",c==="job");render();}
+
+function isJob(x){return x.c==="job"||!!x.j;}
+function render(){
+  let list=D.filter(x=>{
+    if(cat==="job"){ if(!isJob(x))return false;
+      if(sub==="o"&&x.j!=="o")return false; if(sub==="k"&&x.j!=="k")return false; if(sub==="h"&&!x.h)return false; }
+    else if(cat!=="all"&&x.c!==cat) return false;
+    if(q){const hay=(x.t+" "+x.desc+" "+x.z.join(" ")+" "+x.gm.join(" ")).toLowerCase(); if(!hay.includes(q))return false;}
+    return true;});
+  if(cat==="job") list.sort((a,b)=>(b.c==="job")-(a.c==="job"));
+  document.getElementById("grid").innerHTML=list.map(card).join("");
+  document.getElementById("empty").style.display=list.length?"none":"block";
+  const label=cat==="all"?"recipes":(CATNAME[cat]||"").replace("★ ","");
+  document.getElementById("count").textContent=list.length+" "+(list.length===1?"recipe":"recipes")+(cat!=="all"?" · "+label:"");
+}
+function gour(x){
+  if(!x.gm.length) return "";
+  return '<div class="gourmet"><h4>✦ Gourmet version</h4>'+
+    (x.g?'<p class="g-note">The gourmet version is recommended for this dish — only with these flavours does it develop its typical character.</p>':'<p class="g-note">Tastes good pure, too. For gourmet cooking, add as you like:</p>')+
+    '<ul class="gold-list">'+x.gm.map(i=>"<li>"+i+"</li>").join("")+'</ul></div>';
+}
+function card(x){
+  const tags=[];
+  if(isJob(x)) tags.push('<span class="tag dark">✦ Work-friendly</span>');
+  if(x.j==="o") tags.push('<span class="tag">No fridge</span>');
+  if(x.j==="k") tags.push('<span class="tag">Cool bag</span>');
+  if(x.h) tags.push('<span class="tag">One-hand snack</span>');
+  if(x.d) tags.push('<span class="tag">Keeps '+x.d+'</span>');
+  if(x.g) tags.push('<span class="tag gold">✦ Gourmet recommended</span>');
+  return '<article class="recipe'+(x.c==="job"?" job":"")+'"><div class="recipe-top"></div><div class="recipe-body">'+
+    '<div class="r-cat">'+(CATNAME[x.c]||"").replace("★ ","")+'</div><h3>'+x.t+'</h3>'+
+    '<p class="r-desc">'+x.desc+'</p><div class="tags">'+tags.join("")+'</div>'+
+    '<details><summary>✦ Open recipe</summary><div class="r-inner"><h4>Ingredients</h4><ul class="gold-list">'+
+    x.z.map(i=>"<li>"+i+"</li>").join("")+'</ul><h4>Method</h4><ol class="steps">'+
+    x.s.map(i=>"<li>"+i+"</li>").join("")+'</ol>'+gour(x)+(x.tip?'<div class="tip"><b>Amy&#39;s tip:</b> '+x.tip+'</div>':"")+
+    '</div></details></div></article>';
+}
+if(location.hash==="#job-rezepte") setCat("job"); else render();
+</script>
+</body>
+</html>
